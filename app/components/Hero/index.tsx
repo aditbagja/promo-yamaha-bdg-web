@@ -18,8 +18,6 @@ const Hero = () => {
     return () => window.removeEventListener('resize', checkWindowSize);
   }, []);
 
-  console.log(isMobile);
-
   return (
     <section>
       <div key={isMobile ? 'mobile' : 'desktop'}>
