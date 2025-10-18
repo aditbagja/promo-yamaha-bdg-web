@@ -1,11 +1,35 @@
+'use client';
+
+import { ImagesSlider } from '@/components/ui/images-slider';
 import Image from 'next/image';
-import { heroBenefit } from './Hero.const';
+import { useEffect, useState } from 'react';
+import { heroBenefit, imagesBanner, imagesBannerMobile } from './Hero.const';
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkWindowSize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkWindowSize();
+    window.addEventListener('resize', checkWindowSize);
+    return () => window.removeEventListener('resize', checkWindowSize);
+  }, []);
+
+  console.log(isMobile);
+
   return (
-    <section className='min-h-screen'>
+    <section>
+      <div key={isMobile ? 'mobile' : 'desktop'}>
+        <ImagesSlider
+          overlay={false}
+          images={isMobile ? imagesBannerMobile : imagesBanner}
+          className='h-[70vh] md:h-[80vh] lg:h-[90vh]'
+        ></ImagesSlider>
+      </div>
       <div className='bg-primary p-5'>
-        {/* TODO :: Image Slider */}
         <div className='grid grid-cols-3 gap-3'>
           {heroBenefit.map((data) => (
             <div
