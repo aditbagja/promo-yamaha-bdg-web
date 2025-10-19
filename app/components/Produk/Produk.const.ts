@@ -1,37 +1,46 @@
+import { ProdukInterface } from './Produk.interfaces';
+
 export const productCategories = [
   {
     image: '/images/category/classy.png',
     key: 'classy',
+    name: 'Classy',
   },
   {
     image: '/images/category/matic.png',
     key: 'matic',
+    name: 'Matic',
   },
   {
     image: '/images/category/maxi.png',
     key: 'maxi',
+    name: 'Maxi',
   },
   {
     image: '/images/category/moped.png',
     key: 'moped',
+    name: 'Moped',
   },
   {
     image: '/images/category/off-road.png',
     key: 'off-road',
+    name: 'Off-Road',
   },
   {
     image: '/images/category/sport.png',
     key: 'sport',
+    name: 'Sport',
   },
 ];
 
-export const motorListHome = [
+export const motorListHome: ProdukInterface[] = [
   {
     image: '/images/motor-home/lexylx-300x264.png',
     key: 'yamaha-lexi-lx',
     name: 'Yamaha Lexi LX',
     category: 'Maxi',
     price: 'Rp26.550.000',
+    priceNum: 26550000,
   },
   {
     image: '/images/motor-home/matte-blue-1-300x265.png',
@@ -39,6 +48,7 @@ export const motorListHome = [
     name: 'Yamaha Vixion',
     category: 'Sport',
     price: 'Rp30.765.000',
+    priceNum: 30765000,
   },
   {
     image: '/images/motor-home/metallic-dark-grey-1-300x264.png',
@@ -46,6 +56,7 @@ export const motorListHome = [
     name: 'Yamaha MT25',
     category: 'Sport',
     price: 'Rp59.855.000',
+    priceNum: 59855000,
   },
   {
     image: '/images/motor-home/balck-red-300x264.png',
@@ -53,6 +64,7 @@ export const motorListHome = [
     name: 'Yamaha Vega Force',
     category: 'Moped',
     price: 'Rp17.750.000',
+    priceNum: 17750000,
   },
   {
     image: '/images/motor-home/202503052220488174P45627-300x264.png',
@@ -60,6 +72,7 @@ export const motorListHome = [
     name: 'Yamaha Gear Hybrid S',
     category: 'Matic',
     price: 'Rp21.700.000',
+    priceNum: 21700000,
   },
   {
     image: '/images/motor-home/Silver-Yellow-300x264.png',
@@ -67,6 +80,7 @@ export const motorListHome = [
     name: 'Yamaha Aerox Alpha',
     category: 'Maxi',
     price: 'Rp30.685.000',
+    priceNum: 30685000,
   },
   {
     image: '/images/motor-home/YZ250FX-blue-300x264.png',
@@ -74,6 +88,7 @@ export const motorListHome = [
     name: 'Yamaha YZ250FX',
     category: 'Off-Road',
     price: 'Rp98.900.000',
+    priceNum: 98900000,
   },
   {
     image: '/images/motor-home/YZ250F-blue-300x264.png',
@@ -81,6 +96,7 @@ export const motorListHome = [
     name: 'Yamaha YZ250F',
     category: 'Off-Road',
     price: 'Rp105.500.000',
+    priceNum: 105500000,
   },
   {
     image: '/images/motor-home/matte-black-300x265.png',
@@ -88,6 +104,7 @@ export const motorListHome = [
     name: 'Yamaha Vixion R',
     category: 'Sport',
     price: 'Rp33.735.000',
+    priceNum: 33735000,
   },
   {
     image: '/images/motor-home/metallic-cyan-1-300x264.png',
@@ -95,6 +112,7 @@ export const motorListHome = [
     name: 'Yamaha Jupiter Z1',
     category: 'Moped',
     price: 'Rp21.520.000',
+    priceNum: 21520000,
   },
   {
     image: '/images/motor-home/nmax-turbo-magma-elixir-dark-silver-300x264.png',
@@ -102,6 +120,7 @@ export const motorListHome = [
     name: 'Yamaha Nmax Turbo',
     category: 'Maxi',
     price: 'Rp38.610.000',
+    priceNum: 38610000,
   },
   {
     image: '/images/motor-home/CYAN-1-300x264.png',
@@ -109,6 +128,7 @@ export const motorListHome = [
     name: 'Yamaha MX King',
     category: 'Moped',
     price: 'Rp27.770.000',
+    priceNum: 27770000,
   },
   {
     image: '/images/motor-home/nmax-neo-s-dull-blue-300x264.png',
@@ -116,6 +136,7 @@ export const motorListHome = [
     name: 'Yamaha Nmax Neo',
     category: 'Maxi',
     price: 'Rp33.440.000',
+    priceNum: 33440000,
   },
   {
     image: '/images/motor-home/royal-blue-300x264.png',
@@ -123,6 +144,7 @@ export const motorListHome = [
     name: 'Yamaha Fino Grande',
     category: 'Matic',
     price: 'Rp123.456.789',
+    priceNum: 123456789,
   },
   {
     image: '/images/motor-home/cyan-yellow-300x264.png',
@@ -130,6 +152,7 @@ export const motorListHome = [
     name: 'Yamaha X-Ride',
     category: 'Matic',
     price: 'Rp21.180.000',
+    priceNum: 21180000,
   },
   {
     image: '/images/motor-home/magma-black-300x264.png',
@@ -137,6 +160,7 @@ export const motorListHome = [
     name: 'Yamaha Xmax Tech Max',
     category: 'Maxi',
     price: 'Rp73.665.000',
+    priceNum: 73665000,
   },
   {
     image: '/images/motor-home/metallic-black-300x246.png',
@@ -144,6 +168,7 @@ export const motorListHome = [
     name: 'Yamaha R25 ABS',
     category: 'Sport',
     price: 'Rp75.500.000',
+    priceNum: 75500000,
   },
   {
     image: '/images/motor-home/ice-performace-300x264.png',
@@ -151,6 +176,7 @@ export const motorListHome = [
     name: 'Yamaha R15 ABS',
     category: 'Sport',
     price: 'Rp45.955.000',
+    priceNum: 45955000,
   },
   {
     image: '/images/motor-home/lexi-s-abs-300x264.png',
@@ -158,6 +184,7 @@ export const motorListHome = [
     name: 'Yamaha Lexi LX ABS',
     category: 'Maxi',
     price: 'Rp31.130.000',
+    priceNum: 31130000,
   },
   {
     image: '/images/motor-home/Blue-Cybercity-300x264.png',
@@ -165,6 +192,7 @@ export const motorListHome = [
     name: 'Yamaha Aerox Alpha Cybercity',
     category: 'Maxi',
     price: 'Rp35.020.000',
+    priceNum: 35020000,
   },
   {
     image: '/images/motor-home/metallic-dark-grey-300x264.png',
@@ -172,6 +200,7 @@ export const motorListHome = [
     name: 'Yamaha MT15',
     category: 'Sport',
     price: 'Rp40.095.000',
+    priceNum: 40095000,
   },
   {
     image: '/images/motor-home/2024011612393153967A35452-300x264.png',
@@ -179,6 +208,7 @@ export const motorListHome = [
     name: 'Yamaha Lexi LX S',
     category: 'Maxi',
     price: 'Rp28.065.000',
+    priceNum: 28065000,
   },
   {
     image: '/images/motor-home/magma-black-2-300x264.png',
@@ -186,6 +216,7 @@ export const motorListHome = [
     name: 'Yamaha Freego Connected',
     category: 'Matic',
     price: 'Rp24.565.000',
+    priceNum: 24565000,
   },
   {
     image: '/images/motor-home/nmax-turbo-magma-black-1-300x264.png',
@@ -193,6 +224,7 @@ export const motorListHome = [
     name: 'Yamaha Nmax Turbo Tech Max',
     category: 'Maxi',
     price: 'Rp44.115.000',
+    priceNum: 44115000,
   },
   {
     image: '/images/motor-home/racing-blue-300x246.png',
@@ -200,6 +232,7 @@ export const motorListHome = [
     name: 'Yamaha R25',
     category: 'Sport',
     price: 'Rp64.950.000',
+    priceNum: 64950000,
   },
   {
     image: '/images/motor-home/black-espresso-300x264.png',
@@ -207,6 +240,7 @@ export const motorListHome = [
     name: 'Yamaha Fino Premium',
     category: 'Matic',
     price: 'Rp123.456.789',
+    priceNum: 123456789,
   },
   {
     image: '/images/motor-home/metallic-cyan-300x264.png',
@@ -214,6 +248,7 @@ export const motorListHome = [
     name: 'Yamaha Mio M3',
     category: 'Matic',
     price: 'Rp18.700.000',
+    priceNum: 18700000,
   },
   {
     image: '/images/motor-home/black-6-300x264.png',
@@ -221,6 +256,7 @@ export const motorListHome = [
     name: 'Yamaha WR155R',
     category: 'Off-Road',
     price: 'Rp41.925.000',
+    priceNum: 41925000,
   },
   {
     image: '/images/motor-home/nmax-neo-s-white-300x264.png',
@@ -228,6 +264,7 @@ export const motorListHome = [
     name: 'Yamaha Nmax Neo S',
     category: 'Maxi',
     price: 'Rp34.440.000',
+    priceNum: 34440000,
   },
   {
     image: '/images/motor-home/red-1-300x264.png',
@@ -235,6 +272,7 @@ export const motorListHome = [
     name: 'Yamaha Fazzio Hybrid',
     category: 'Classy',
     price: 'Rp22.395.000',
+    priceNum: 22395000,
   },
   {
     image: '/images/motor-home/2025030522215120818X79618-300x264.png',
@@ -242,6 +280,7 @@ export const motorListHome = [
     name: 'Yamaha Gear Hybrid',
     category: 'Matic',
     price: 'Rp20.200.000',
+    priceNum: 20200000,
   },
   {
     image: '/images/motor-home/nmax-turbo-ultimate-magma-black-300x264.png',
@@ -249,6 +288,7 @@ export const motorListHome = [
     name: 'Yamaha Nmax Turbo Tech Max Ultimate',
     category: 'Maxi',
     price: 'Rp46.115.000',
+    priceNum: 46115000,
   },
   {
     image: '/images/motor-home/premium-black-300x264.png',
@@ -256,6 +296,7 @@ export const motorListHome = [
     name: 'Yamaha Xmax',
     category: 'Maxi',
     price: 'Rp68.410.000',
+    priceNum: 68410000,
   },
   {
     image: '/images/motor-home/magma-black-1-300x264.png',
@@ -263,6 +304,7 @@ export const motorListHome = [
     name: 'Yamaha Grand Filano Lux',
     category: 'Classy',
     price: 'Rp29.010.000',
+    priceNum: 29010000,
   },
   {
     image: '/images/motor-home/Blue-4-300x264.png',
@@ -270,6 +312,7 @@ export const motorListHome = [
     name: 'Yamaha YZ125X',
     category: 'Off-Road',
     price: 'Rp80.000.000',
+    priceNum: 80000000,
   },
   {
     image: '/images/motor-home/pink-mauve-300x264.png',
@@ -277,6 +320,7 @@ export const motorListHome = [
     name: 'Yamaha Fazzio Neo',
     category: 'Classy',
     price: 'Rp24.150.000',
+    priceNum: 24150000,
   },
   {
     image: '/images/motor-home/titan-300x264.png',
@@ -284,6 +328,7 @@ export const motorListHome = [
     name: 'Yamaha Fazzio Lux',
     category: 'Classy',
     price: 'Rp24.850.000',
+    priceNum: 24850000,
   },
   {
     image: '/images/motor-home/Matte-Dark-Grey-Turbo-300x264.png',
@@ -291,6 +336,7 @@ export const motorListHome = [
     name: 'Yamaha Aerox Turbo',
     category: 'Maxi',
     price: 'Rp40.635.000',
+    priceNum: 40635000,
   },
   {
     image: '/images/motor-home/black-5-300x264.png',
@@ -298,6 +344,7 @@ export const motorListHome = [
     name: 'Yamaha R15',
     category: 'Sport',
     price: 'Rp41.925.000',
+    priceNum: 41925000,
   },
   {
     image: '/images/motor-home/classic-tosca-300x264.png',
@@ -305,6 +352,7 @@ export const motorListHome = [
     name: 'Yamaha Fino Sporty',
     category: 'Matic',
     price: 'Rp123.456.789',
+    priceNum: 123456789,
   },
   {
     image: '/images/motor-home/Matte-Dark-Grey-Ultimate.png',
@@ -312,6 +360,7 @@ export const motorListHome = [
     name: 'Yamaha Aerox Turbo Ultimate',
     category: 'Maxi',
     price: 'Rp42.815.000',
+    priceNum: 42815000,
   },
   {
     image: '/images/motor-home/YZ250X-blue-300x264.png',
@@ -319,6 +368,7 @@ export const motorListHome = [
     name: 'Yamaha YZ250X',
     category: 'Off-Road',
     price: 'Rp95.700.000',
+    priceNum: 95700000,
   },
   {
     image: '/images/motor-home/green-1-300x264.png',
@@ -326,6 +376,7 @@ export const motorListHome = [
     name: 'Yamaha Grand Filano Neo',
     category: 'Classy',
     price: 'Rp27.755.000',
+    priceNum: 27755000,
   },
   {
     image: '/images/motor-home/sand-300x264.png',
@@ -333,6 +384,7 @@ export const motorListHome = [
     name: 'Yamaha Freego',
     category: 'Matic',
     price: 'Rp22.655.000',
+    priceNum: 22655000,
   },
   {
     image: '/images/motor-home/light-blue-wanderlust-300x265.png',
@@ -340,5 +392,6 @@ export const motorListHome = [
     name: 'Yamaha XSR',
     category: 'Sport',
     price: 'Rp39.795.000',
+    priceNum: 39795000,
   },
 ];
