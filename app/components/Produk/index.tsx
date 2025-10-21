@@ -31,7 +31,7 @@ const Produk = () => {
                     height={500}
                   />
                 </Link>
-                <div className='mx-auto flex h-28 flex-col justify-between gap-1 text-center'>
+                <div className='mx-auto flex h-28 flex-col justify-between gap-1 text-center 2xl:h-auto'>
                   <p className='text-sm text-gray-500'>{motor.category}</p>
                   <Link
                     href={`/product/${motor.key}`}

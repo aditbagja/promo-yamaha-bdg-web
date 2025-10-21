@@ -71,6 +71,7 @@ const Footer = () => {
                   <div>
                     <Link
                       href={contact.href}
+                      target='_blank'
                       className='text-primary font-bold'
                     >
                       {contact.title}

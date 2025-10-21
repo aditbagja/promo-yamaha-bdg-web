@@ -193,10 +193,13 @@ const Navbar = () => {
             </Drawer>
           </div>
           <div className='hidden gap-3 lg:flex'>
-            <Link href={'#'}>
+            <Link
+              href='https://www.instagram.com/fujinila1995/'
+              target='_blank'
+            >
               <Icon icon='skill-icons:instagram' />
             </Link>
-            <Link href={'#'}>
+            <Link href='https://www.facebook.com/fujinila1995' target='_blank'>
               <Icon icon='devicon:facebook' />
             </Link>
           </div>

@@ -1,6 +1,6 @@
-import { ProdukInterface } from './Produk.interfaces';
+import { CategoryInterface, ProdukInterface } from './Produk.interfaces';
 
-export const productCategories = [
+export const productCategories: CategoryInterface[] = [
   {
     image: '/images/category/classy.png',
     key: 'classy',
@@ -41,6 +41,99 @@ export const motorListHome: ProdukInterface[] = [
     category: 'Maxi',
     price: 'Rp26.550.000',
     priceNum: 26550000,
+    tags: ['lexi', 'lexi lx', 'lexi lx abs', 'maxi'],
+    description: {
+      specifications: [
+        {
+          section: 'mesin',
+          title: [
+            { key: 'engineType', value: 'Tipe Mesin' },
+            { key: 'cylinderType', value: 'Susunan Silinder' },
+            { key: 'transmissionType', value: 'Tipe Transmisi' },
+            { key: 'clutchType', value: 'Tipe Kopling' },
+            { key: 'fuelSystem', value: 'Sistem Bahan Bakar' },
+            { key: 'oilCapacity', value: 'Kapasitas Oli Mesin' },
+            { key: 'lubricationSystem', value: 'Sistem Pelumasan' },
+            { key: 'starterSystem', value: 'Sistem Starter' },
+            { key: 'maxTorque', value: 'Torsi Maksimum' },
+            { key: 'maxPower', value: 'Daya Maksimum' },
+            { key: 'cylinderVolume', value: 'Volume Silinder' },
+            { key: 'compressionRatio', value: 'Perbandingan Kompresi' },
+            { key: 'boreStroke', value: 'Diameter x Langkah' },
+          ],
+          desc: [
+            { key: 'engineType', value: 'SOHC' },
+            { key: 'cylinderType', value: 'Single Cylinder' },
+            { key: 'transmissionType', value: 'V-belt automatic' },
+            { key: 'clutchType', value: 'Single Dry Clutch' },
+            { key: 'fuelSystem', value: 'Fuel Injection' },
+            { key: 'oilCapacity', value: 'Total = 1.00 L ; Berkala = 0.90 L' },
+            { key: 'lubricationSystem', value: 'Wet Sump' },
+            { key: 'starterSystem', value: 'Electric starter' },
+            { key: 'maxTorque', value: '14.2 Nm / 6500 rpm' },
+            { key: 'maxPower', value: '11.3 kW / 8000 rpm' },
+            { key: 'cylinderVolume', value: '155.9 cc' },
+            { key: 'compressionRatio', value: '11.6:1' },
+            { key: 'boreStroke', value: '58 x 58.7 mm' },
+          ],
+        },
+        {
+          section: 'dimensi',
+          title: [
+            { key: 'dimension', value: 'P x L x T' },
+            { key: 'wheelbase', value: 'Jarak Sumbu Roda' },
+            { key: 'groundClearance', value: 'Jarak Terendah Ke Tanah' },
+            { key: 'seatHeight', value: 'Tinggi Tempat Duduk' },
+            { key: 'weight', value: 'Berat Isi' },
+            { key: 'fuelTankCapacity', value: 'Kapasitas Tangki Bensin' },
+          ],
+          desc: [
+            { key: 'dimension', value: '1970 mm x 720 mm x 1135 mm' },
+            { key: 'wheelbase', value: '1350 mm' },
+            { key: 'groundClearance', value: '135 mm' },
+            { key: 'seatHeight', value: '770 mm' },
+            { key: 'weight', value: '118 kg' },
+            { key: 'fuelTankCapacity', value: '4.2 L' },
+          ],
+        },
+        {
+          section: 'rangka',
+          title: [
+            { key: 'frameType', value: 'Tipe Rangka' },
+            { key: 'frontSuspension', value: 'Suspensi Depan' },
+            { key: 'rearSuspension', value: 'Tipe Suspensi Belakang' },
+            { key: 'tireType', value: 'Tipe Ban' },
+            { key: 'frontTire', value: 'Ban Depan' },
+            { key: 'rearTire', value: 'Ban Belakang' },
+            { key: 'frontBrake', value: 'Rem Depan' },
+            { key: 'rearBrake', value: 'Rem Belakang' },
+          ],
+          desc: [
+            { key: 'frameType', value: 'Underbone' },
+            { key: 'frontSuspension', value: 'Telescopic Fork' },
+            { key: 'rearSuspension', value: 'Unit Swing' },
+            { key: 'tireType', value: 'Tubeless' },
+            { key: 'frontTire', value: '90/90-14M/C 46P' },
+            { key: 'rearTire', value: '100/90-14M/C 57P' },
+            { key: 'frontBrake', value: 'Disc' },
+            { key: 'rearBrake', value: 'Drum' },
+          ],
+        },
+        {
+          section: 'kelistrikan',
+          title: [
+            { key: 'ignitionSystem', value: 'Sistem Pengapian' },
+            { key: 'batteryType', value: 'Tipe Battery' },
+            { key: 'sparkPlugType', value: 'Tipe Busi' },
+          ],
+          desc: [
+            { key: 'ignitionSystem', value: 'TCI' },
+            { key: 'batteryType', value: 'YTZ6V' },
+            { key: 'sparkPlugType', value: 'CPR8EA-9 / NGK' },
+          ],
+        },
+      ],
+    },
   },
   {
     image: '/images/motor-home/matte-blue-1-300x265.png',
@@ -129,6 +222,11 @@ export const motorListHome: ProdukInterface[] = [
     category: 'Moped',
     price: 'Rp27.770.000',
     priceNum: 27770000,
+    additionalInfo: [
+      'Yamaha MX King GP Monster Rp. 25.490.000',
+      'Yamaha MX King WGP 60th Rp. 26.710.000',
+    ],
+    tags: ['moped', 'mx king'],
   },
   {
     image: '/images/motor-home/nmax-neo-s-dull-blue-300x264.png',

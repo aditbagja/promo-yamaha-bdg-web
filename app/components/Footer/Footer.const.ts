@@ -2,13 +2,13 @@ export const contactUs = [
   {
     icon: 'gridicons:phone',
     title: 'Hubungi Kami Disini',
-    description: 'Dani | 0831 6976 4098',
+    description: 'Fuji | 0821 1660 5311',
     href: '#',
   },
   {
     icon: 'mdi:whatsapp',
     title: 'WhatsApp Kami Disini',
-    description: 'Dani | 0831 6976 4098',
+    description: 'Fuji | 0821 1660 5311',
     href: '#',
   },
   {
@@ -16,6 +16,6 @@ export const contactUs = [
     title: 'Alamat Dealer',
     description:
       'Jl. Ibu Inggit Garnasih No.122, Pungkur, Kec. Regol, Kota Bandung, Jawa Barat 40252',
-    href: '#',
+    href: 'https://maps.app.goo.gl/TVhhfZ25hNoUTEe1A',
   },
 ];
