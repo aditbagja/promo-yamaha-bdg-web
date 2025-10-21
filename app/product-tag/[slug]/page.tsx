@@ -1,8 +1,4 @@
-import {
-  motorListHome,
-  productCategories,
-} from '@/app/components/Produk/Produk.const';
-import Link from 'next/link';
+import { motorListHome } from '@/app/components/Produk/Produk.const';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -12,6 +8,7 @@ import {
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
 import { Icon } from '@iconify/react';
+import Link from 'next/link';
 import SortingResult from './components/SortingResult';
 
 const ProductTagPage = async ({
