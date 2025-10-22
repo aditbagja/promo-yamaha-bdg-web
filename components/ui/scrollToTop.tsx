@@ -31,7 +31,7 @@ const ScrollToTop = () => {
 
   return (
     <button
-      className={`scrollToTopButton bg-secondary fixed bottom-0 left-5 z-50 mr-6 mb-[71px] flex items-center gap-2 p-2 text-xs ${isVisible ? 'visible' : ''}`}
+      className={`scrollToTopButton bg-secondary fixed bottom-0 left-5 z-50 mr-6 mb-10 flex items-center gap-2 p-2 text-xs ${isVisible ? 'visible' : ''}`}
       onClick={scrollToTop}
     >
       <Icon icon='mdi:chevron-up' height={25} width={25} color='white' />

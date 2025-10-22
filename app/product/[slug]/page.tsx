@@ -1,13 +1,15 @@
+import NotFound from '@/app/components/NotFound';
+import ProductCard from '@/app/components/ProductCard';
 import {
   motorListHome,
   productCategories,
 } from '@/app/components/Produk/Produk.const';
-
-import NotFound from '@/app/components/NotFound';
+import { getListImagesFromFolder } from '@/app/utils/countFiles';
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { Icon } from '@iconify/react';
 import Image from 'next/image';
-import ProductInformation from './components/ProductInformation';
 import DescriptionTabs from './components/DescriptionTabs';
-import ProductCard from '@/app/components/ProductCard';
+import ProductInformation from './components/ProductInformation';
 
 const ProductPage = async ({
   params,
@@ -20,22 +22,40 @@ const ProductPage = async ({
     (item) => item.name === motor?.category
   );
 
+  const motorImageList = getListImagesFromFolder(
+    `/public/images/motor-detail/${motor?.key}`,
+    `/images/motor-detail/${motor?.key}`
+  );
+
   if (motor && category) {
     return (
       <section className='px-5 py-10'>
         <div className='flex flex-col gap-5'>
-          <div className='grid grid-cols-1 gap-2 lg:grid-cols-2'>
-            <div>
-              <Image
-                src={motor.image}
-                alt={motor.name}
-                width={700}
-                height={700}
-              />
-            </div>
+          <div className='grid grid-cols-1 gap-3 lg:grid-cols-2'>
+            <Dialog>
+              <DialogTrigger asChild className='mx-auto flex cursor-pointer'>
+                <div>
+                  <Image
+                    src={`/images/motor-detail/${motor.key}/1.png`}
+                    alt={motor.name}
+                    width={700}
+                    height={700}
+                  />
+                  <Icon icon='mdi:magnify' width={32} height={32} />
+                </div>
+              </DialogTrigger>
+              <DialogContent className='border-none bg-white/50'>
+                <Image
+                  src={`/images/motor-detail/${motor.key}/1.png`}
+                  alt={motor.name}
+                  width={700}
+                  height={700}
+                />
+              </DialogContent>
+            </Dialog>
             <ProductInformation motor={motor} category={category} />
           </div>
-          <DescriptionTabs motor={motor} />
+          <DescriptionTabs motor={motor} motorImageList={motorImageList} />
         </div>
         <div className='mt-10 flex flex-col gap-3'>
           <h1 className='text-3xl font-medium'>Related Products</h1>

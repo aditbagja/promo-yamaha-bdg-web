@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import { LightboxGrid } from '@/components/ui/lightbox-grid';
 import { Icon } from '@iconify/react';
 import { useState } from 'react';
 
@@ -38,7 +39,13 @@ const MotorSpecSection = ({
   );
 };
 
-const DescriptionTabs = ({ motor }: { motor: ProdukInterface }) => {
+const DescriptionTabs = ({
+  motor,
+  motorImageList,
+}: {
+  motor: ProdukInterface;
+  motorImageList: string[];
+}) => {
   const spesifikasiData = [
     {
       key: 'mesin',
@@ -66,7 +73,14 @@ const DescriptionTabs = ({ motor }: { motor: ProdukInterface }) => {
     {
       title: 'Galeri',
       icon: 'solar:gallery-outline',
-      body: <div>galery body</div>,
+      body: (
+        <div>
+          <LightboxGrid
+            images={motorImageList}
+            gridSize='grid-cols-1 md:grid-cols-2 lg:grid-cols-4'
+          />
+        </div>
+      ),
     },
     {
       title: 'Spesifikasi',

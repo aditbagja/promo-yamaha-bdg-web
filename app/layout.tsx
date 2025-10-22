@@ -13,6 +13,9 @@ const Footer = React.lazy(() => import('./components/Footer'));
 const NavbarMemo = React.memo(Navbar);
 const FooterMemo = React.memo(Footer);
 
+const ScrollToTop = React.lazy(() => import('@/components/ui/scrollToTop'));
+const ScrollToTopMemo = React.memo(ScrollToTop);
+
 export const metadata: Metadata = {
   title: 'Yamaha Surya Putra Motor - Yamaha Surya Putra Motor Bandung',
 };
@@ -27,6 +30,7 @@ export default function RootLayout({
       <body className={`${poppins.className} antialiased`}>
         <NavbarMemo />
         {children}
+        <ScrollToTopMemo />
         <FooterMemo />
       </body>
     </html>
