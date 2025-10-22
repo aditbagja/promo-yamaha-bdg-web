@@ -1,3 +1,4 @@
+import { facebookLink, instagramLink } from '@/app/common/constants';
 import {
   Accordion,
   AccordionContent,
@@ -12,11 +13,6 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from '@/components/ui/drawer';
-import { Icon } from '@iconify/react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { navbarMenu } from './Navbar.const';
-
 import {
   Menubar,
   MenubarContent,
@@ -27,6 +23,10 @@ import {
   MenubarSubTrigger,
   MenubarTrigger,
 } from '@/components/ui/menubar';
+import { Icon } from '@iconify/react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { navbarMenu } from './Navbar.const';
 
 const Navbar = () => {
   return (
@@ -193,13 +193,10 @@ const Navbar = () => {
             </Drawer>
           </div>
           <div className='hidden gap-3 lg:flex'>
-            <Link
-              href='https://www.instagram.com/fujinila1995/'
-              target='_blank'
-            >
+            <Link href={instagramLink} target='_blank'>
               <Icon icon='skill-icons:instagram' />
             </Link>
-            <Link href='https://www.facebook.com/fujinila1995' target='_blank'>
+            <Link href={facebookLink} target='_blank'>
               <Icon icon='devicon:facebook' />
             </Link>
           </div>

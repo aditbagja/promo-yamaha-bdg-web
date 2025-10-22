@@ -1,19 +1,25 @@
+import { facebookLink, instagramLink, phoneLink } from '@/app/common/constants';
+
 export const socialMedia = [
   {
     icon: 'mdi:whatsapp',
     title: 'WhatsApp',
+    href: 'https://wa.me/6282116605311?text=Hallo%20Admin%20Yamaha%20Surya%20Putra%20Motor',
   },
   {
     icon: 'mdi:phone-in-talk-outline',
     title: 'Phone',
+    href: phoneLink,
   },
   {
     icon: 'mdi:instagram',
     title: 'Instagram',
+    href: instagramLink,
   },
   {
     icon: 'iconoir:facebook',
     title: 'Facebook',
+    href: facebookLink,
   },
 ];
 

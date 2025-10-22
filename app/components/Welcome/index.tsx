@@ -48,13 +48,15 @@ const Welcome = () => {
           </div>
           <div className='grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4'>
             {socialMedia.map((social) => (
-              <button
+              <a
                 key={social.title}
-                className='bg-primary flex cursor-pointer items-center justify-center gap-1 rounded-xs border border-white py-2 text-sm text-white'
+                href={social.href}
+                target='_blank'
+                className='bg-primary flex cursor-pointer items-center justify-center gap-1 rounded-xs border border-white py-2 text-sm text-white transition-all duration-300 hover:scale-110'
               >
                 <Icon icon={social.icon} width={25} height={25} />
                 {social.title}
-              </button>
+              </a>
             ))}
           </div>
           <div className='border border-white'>

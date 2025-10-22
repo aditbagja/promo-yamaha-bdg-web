@@ -4,7 +4,7 @@ import { testimoniImages } from './Testimony.const';
 
 const Testimony = () => {
   return (
-    <section className='bg-primary p-5'>
+    <section id='testimoni' className='bg-primary p-5'>
       <div className='flex flex-col gap-5'>
         <div className='flex justify-center'>
           <Image

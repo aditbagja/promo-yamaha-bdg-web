@@ -1,15 +1,17 @@
+import { phoneLink, whatsAppDefault } from '@/app/common/constants';
+
 export const contactUs = [
   {
     icon: 'gridicons:phone',
     title: 'Hubungi Kami Disini',
     description: 'Fuji | 0821 1660 5311',
-    href: '#',
+    href: phoneLink,
   },
   {
     icon: 'mdi:whatsapp',
     title: 'WhatsApp Kami Disini',
     description: 'Fuji | 0821 1660 5311',
-    href: '#',
+    href: whatsAppDefault,
   },
   {
     icon: 'iconoir:maps-arrow-diagonal',
