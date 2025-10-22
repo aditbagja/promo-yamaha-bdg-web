@@ -23,6 +23,7 @@ export const ImagesSlider = ({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(false);
   const [loadedImages, setLoadedImages] = useState<string[]>([]);
+  console.log(loading);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
@@ -35,10 +36,6 @@ export const ImagesSlider = ({
       prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1
     );
   };
-
-  useEffect(() => {
-    loadImages();
-  }, []);
 
   const loadImages = () => {
     setLoading(true);
@@ -59,6 +56,11 @@ export const ImagesSlider = ({
       })
       .catch((error) => console.error('Failed to load images', error));
   };
+
+  useEffect(() => {
+    loadImages();
+  }, []);
+
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'ArrowRight') {
@@ -70,7 +72,6 @@ export const ImagesSlider = ({
 
     window.addEventListener('keydown', handleKeyDown);
 
-    // autoplay
     let interval: any;
     if (autoplay) {
       interval = setInterval(() => {
@@ -82,9 +83,9 @@ export const ImagesSlider = ({
       window.removeEventListener('keydown', handleKeyDown);
       clearInterval(interval);
     };
-  }, []);
+  }, [autoplay]);
 
-  const slideVariants = {
+  const slideVariants: any = {
     initial: {
       scale: 0,
       opacity: 0,

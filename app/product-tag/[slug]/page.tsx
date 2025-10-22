@@ -37,7 +37,9 @@ const ProductTagPage = async ({
                 <Icon icon='mdi:slash-forward' />
               </BreadcrumbSeparator>
               <BreadcrumbItem>
-                <BreadcrumbPage>Product tagged "{cleanSlug}"</BreadcrumbPage>
+                <BreadcrumbPage>
+                  Product tagged &quot;{cleanSlug}&quot;
+                </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
