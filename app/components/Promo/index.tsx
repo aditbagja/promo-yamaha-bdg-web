@@ -22,14 +22,15 @@ const Promo = () => {
               <div className='mt-3 flex w-full'>
                 <m.div
                   initial={{ opacity: 0, x: -100 }}
-                  whileInView={{ opacity: 1, x: 120 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5 }}
                   viewport={{ once: true }}
+                  className='mx-auto flex'
                 >
                   <a
                     href='https://wa.me/6282116605311?text=Salam%20Semakin%20Didepan.%20Hallo,%20saya%20ingin%20menanyakan%20promo%20Yamaha'
                     target='_blank'
-                    className='mx-auto flex cursor-pointer items-center gap-1 rounded-md bg-green-500 px-4 py-2 text-xs text-white transition-all duration-150 hover:bg-green-700 xl:text-base'
+                    className='flex cursor-pointer items-center gap-1 rounded-md bg-green-500 px-4 py-2 text-xs text-white transition-all duration-150 hover:bg-green-700 xl:text-base'
                   >
                     <Icon icon='mdi:whatsapp' width={25} height={25} />
                     WhatsApp Kami
