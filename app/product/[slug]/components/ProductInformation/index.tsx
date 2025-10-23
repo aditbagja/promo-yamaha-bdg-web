@@ -78,7 +78,7 @@ const ProductInformation = ({ motor, category }: ProductInformationProps) => {
           </div>
         </div>
       </div>
-      <div className='flex gap-5'>
+      <div className='flex flex-col gap-3 md:flex-row md:gap-5'>
         <div className='flex gap-1'>
           <p className='text-sm font-medium'>Category:</p>
           <Link

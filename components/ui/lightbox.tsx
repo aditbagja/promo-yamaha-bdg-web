@@ -98,7 +98,7 @@ export function Lightbox({
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.3 }}
-                className='relative max-h-[95vh] px-12'
+                className='relative'
               >
                 <motion.img
                   key={currentIndex}
@@ -118,15 +118,15 @@ export function Lightbox({
                 <div className='pointer-events-none absolute inset-0 flex items-center justify-between'>
                   <button
                     onClick={prevImage}
-                    className='bg-opacity-50 hover:bg-opacity-75 pointer-events-auto rounded-full bg-black p-2 text-white transition-colors'
+                    className='bg-opacity-50 hover:bg-opacity-75 pointer-events-auto rounded-full bg-white p-2 text-white transition-colors'
                   >
-                    <ChevronLeft className='h-6 w-6' />
+                    <ChevronLeft className='h-6 w-6 text-black' />
                   </button>
                   <button
                     onClick={nextImage}
-                    className='bg-opacity-50 hover:bg-opacity-75 pointer-events-auto rounded-full bg-black p-2 text-white transition-colors'
+                    className='bg-opacity-50 hover:bg-opacity-75 pointer-events-auto rounded-full bg-white p-2 text-white transition-colors'
                   >
-                    <ChevronRight className='h-6 w-6' />
+                    <ChevronRight className='h-6 w-6 text-black' />
                   </button>
                 </div>
               </motion.div>

@@ -50,11 +50,11 @@ export function LightboxGrid({
     <>
       <div className={`grid ${gridSize} gap-3`}>
         {images.map((src, index) => (
-          <div key={index + 1} className='overflow-hidden rounded-md'>
+          <div key={index + 1} className='overflow-hidden'>
             <Image
               src={src}
               alt={`Image ${index + 1}`}
-              className='h-full w-full cursor-pointer rounded-md bg-white object-cover p-1 transition-opacity hover:opacity-80'
+              className='h-full w-full cursor-pointer object-cover transition-opacity hover:opacity-80'
               onClick={() => openLightbox(index)}
               width={800}
               height={800}
@@ -71,7 +71,7 @@ export function LightboxGrid({
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.3 }}
-                className='relative max-h-[95vh] px-12'
+                className='relative h-full w-full'
               >
                 <motion.img
                   key={currentIndex}
@@ -91,15 +91,15 @@ export function LightboxGrid({
                 <div className='pointer-events-none absolute inset-0 flex items-center justify-between'>
                   <button
                     onClick={prevImage}
-                    className='bg-opacity-50 hover:bg-opacity-75 pointer-events-auto rounded-full bg-black p-2 text-white transition-colors'
+                    className='bg-opacity-50 hover:bg-opacity-75 pointer-events-auto rounded-full bg-white p-2 text-white transition-colors'
                   >
-                    <ChevronLeft className='h-6 w-6' />
+                    <ChevronLeft className='h-6 w-6 text-black' />
                   </button>
                   <button
                     onClick={nextImage}
-                    className='bg-opacity-50 hover:bg-opacity-75 pointer-events-auto rounded-full bg-black p-2 text-white transition-colors'
+                    className='bg-opacity-50 hover:bg-opacity-75 pointer-events-auto rounded-full bg-white p-2 text-white transition-colors'
                   >
-                    <ChevronRight className='h-6 w-6' />
+                    <ChevronRight className='h-6 w-6 text-black' />
                   </button>
                 </div>
               </motion.div>

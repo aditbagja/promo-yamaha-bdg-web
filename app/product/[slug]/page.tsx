@@ -62,6 +62,7 @@ const ProductPage = async ({
           <div className='mt-5 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4'>
             {motorListHome
               .filter((item) => item.category === category.name)
+              .slice(0, 4)
               .map((data) => (
                 <ProductCard key={data.name} data={data} />
               ))}

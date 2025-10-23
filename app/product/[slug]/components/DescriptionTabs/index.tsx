@@ -116,7 +116,7 @@ const DescriptionTabs = ({
             <button
               key={tab.title}
               onClick={() => setActiveTab(index)}
-              className={`${activeTab === index ? 'bg-primary' : 'bg-secondary hover:bg-primary'} flex w-full cursor-pointer items-center justify-center gap-3 rounded-lg px-10 py-3 text-sm font-semibold text-white transition-all duration-300`}
+              className={`${activeTab === index ? 'bg-primary' : 'bg-secondary hover:bg-primary'} flex w-full cursor-pointer items-center justify-center gap-3 rounded-lg py-3 text-sm font-semibold text-white transition-all duration-300 md:px-10`}
             >
               <Icon icon={tab.icon} width={25} height={25} />
               {tab.title}
