@@ -16,8 +16,12 @@ export function getListImagesFromFolder(
   folderPath: string,
   resultPath: string
 ): string[] {
-  const pathJoin = path.join(process.cwd(), folderPath);
-  const files = fs.readdirSync(pathJoin);
+  try {
+    const pathJoin = path.join(process.cwd(), folderPath);
+    const files = fs.readdirSync(pathJoin);
 
-  return files.map((name) => `${resultPath}/${name}`);
+    return files.map((name) => `${resultPath}/${name}`);
+  } catch {
+    return [];
+  }
 }

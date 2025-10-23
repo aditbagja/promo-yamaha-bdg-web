@@ -142,6 +142,134 @@ export const motorListHome: ProdukInterface[] = [
     category: 'Sport',
     price: 'Rp30.765.000',
     priceNum: 30765000,
+    tags: ['sport', 'vixion', 'vixion r'],
+    description: {
+      specifications: [
+        {
+          section: 'mesin',
+          title: [
+            { key: 'fuelSystem', value: 'Sistem Bahan Bakar' },
+            { key: 'clutchType', value: 'Tipe Kopling' },
+            { key: 'transmissionType', value: 'Tipe Transmisi' },
+            { key: 'engineType', value: 'Tipe Mesin' },
+            { key: 'cylinderArrangement', value: 'Susunan Silinder' },
+            { key: 'boreStroke', value: 'Diameter x Langkah' },
+            { key: 'compressionRatio', value: 'Perbandingan Kompresi' },
+            { key: 'engineDisplacement', value: 'Volume Silinder' },
+            { key: 'maxPower', value: 'Daya Maksimum' },
+            { key: 'maxTorque', value: 'Torsi Maksimum' },
+            { key: 'starterSystem', value: 'Sistem Starter' },
+            { key: 'lubricationSystem', value: 'Sistem Pelumasan' },
+          ],
+          desc: [
+            { key: 'fuelSystem', value: 'Fuel Injection' },
+            {
+              key: 'clutchType',
+              value: 'Wet Type Multi-Plate Clutch ; Assist & Slipper Clutch',
+            },
+            { key: 'transmissionType', value: 'Manual' },
+            {
+              key: 'engineType',
+              value:
+                'Liquid Cooled 4-Stroke, SOHC, 4 Valve, VVA (Vixion R), Liquid Cooled 4-stroke, SOHC (Vixion)',
+            },
+            { key: 'cylinderArrangement', value: 'Single Cylinder' },
+            {
+              key: 'boreStroke',
+              value: '58 x 58.7 mm (Vixion R), 57 x 58.7 mm (Vixion)',
+            },
+            {
+              key: 'compressionRatio',
+              value: '11.6±0.4 : 1 (Vixion R), 10.4 : 1 (Vixion)',
+            },
+            {
+              key: 'engineDisplacement',
+              value: '155.1 cc (Vixion R), 149.8 cc (Vixion)',
+            },
+            {
+              key: 'maxPower',
+              value:
+                '14.2 kW / 10000 rpm (Vixion R), 12.2 kW / 8500 rpm (Vixion)',
+            },
+            {
+              key: 'maxTorque',
+              value:
+                '14.7 Nm / 8500 rpm (Vixion R), 14.5 Nm / 7500 rpm (Vixion)',
+            },
+            { key: 'starterSystem', value: 'Electric Starter' },
+            { key: 'lubricationSystem', value: 'Wet Sump' },
+          ],
+        },
+        {
+          section: 'dimensi',
+          title: [
+            { key: 'dimension', value: 'P x L x T (Length x Width x Height)' },
+            { key: 'wheelbase', value: 'Jarak Sumbu Roda' },
+            { key: 'groundClearance', value: 'Jarak Terendah Ke Tanah' },
+            { key: 'seatHeight', value: 'Tinggi Tempat Duduk' },
+            { key: 'weight', value: 'Berat Isi' },
+            { key: 'fuelTankCapacity', value: 'Kapasitas Tangki Bensin' },
+          ],
+          desc: [
+            {
+              key: 'dimension',
+              value:
+                '1950 x 720 x 1025 mm (Vixion R), 1955 x 720 x 1025 mm (Vixion)',
+            },
+            { key: 'wheelbase', value: '1320 mm (Vixion R), 1295 mm (Vixion)' },
+            { key: 'groundClearance', value: '165 mm' },
+            { key: 'seatHeight', value: '795 mm' },
+            { key: 'weight', value: '131 kg (Vixion R), 132 kg (Vixion)' },
+            {
+              key: 'fuelTankCapacity',
+              value: '11 L (Vixion R), 12 L (Vixion)',
+            },
+          ],
+        },
+        {
+          section: 'rangka',
+          title: [
+            { key: 'frontSuspension', value: 'Suspensi Depan' },
+            { key: 'rearSuspension', value: 'Suspensi Belakang' },
+            { key: 'tireType', value: 'Tipe Ban' },
+            { key: 'frontTire', value: 'Ban Depan' },
+            { key: 'rearTire', value: 'Ban Belakang' },
+            { key: 'frontBrake', value: 'Rem Depan' },
+            { key: 'rearBrake', value: 'Rem Belakang' },
+            { key: 'frameType', value: 'Tipe Rangka' },
+          ],
+          desc: [
+            { key: 'frontSuspension', value: 'Telescopic' },
+            { key: 'rearSuspension', value: 'Swing Arm' },
+            { key: 'tireType', value: 'Tubeless' },
+            { key: 'frontTire', value: '90/80-17M/C 46P' },
+            {
+              key: 'rearTire',
+              value: '130/70-17M/C 62P (Vixion R), 120/70-17M/C 58P (Vixion)',
+            },
+            { key: 'frontBrake', value: 'Disc Brake' },
+            { key: 'rearBrake', value: 'Disc Brake' },
+            { key: 'frameType', value: 'Deltabox' },
+          ],
+        },
+        {
+          section: 'kelistrikan',
+          title: [
+            { key: 'sparkPlugType', value: 'Tipe Busi' },
+            { key: 'ignitionSystem', value: 'Sistem Pengapian' },
+            { key: 'batteryType', value: 'Battery' },
+          ],
+          desc: [
+            {
+              key: 'sparkPlugType',
+              value: 'NGK/MR8E9 (Vixion R), NGK/CR8E (Vixion)',
+            },
+            { key: 'ignitionSystem', value: 'TCI' },
+            { key: 'batteryType', value: 'YTZ4V/GTZ4V' },
+          ],
+        },
+      ],
+    },
   },
   {
     image: '/images/motor-home/metallic-dark-grey-1-300x264.png',
@@ -150,6 +278,96 @@ export const motorListHome: ProdukInterface[] = [
     category: 'Sport',
     price: 'Rp59.855.000',
     priceNum: 59855000,
+    tags: ['mt25', 'sport'],
+    additionalInfo: ['MT25 ABS Rp. 64.200.000'],
+    description: {
+      specifications: [
+        {
+          section: 'mesin',
+          title: [
+            { key: 'engineType', value: 'Tipe Mesin' },
+            { key: 'cylinderArrangement', value: 'Jumlah / Posisi Silinder' },
+            { key: 'boreStroke', value: 'Diameter x Langkah' },
+            { key: 'compressionRatio', value: 'Perbandingan Kompresi' },
+            { key: 'maxPower', value: 'Daya Maksimum' },
+            { key: 'maxTorque', value: 'Torsi Maksimum' },
+            { key: 'starterSystem', value: 'Sistem Starter' },
+            { key: 'lubricationSystem', value: 'Sistem Pelumasan' },
+            { key: 'oilCapacity', value: 'Kapasitas Oli Mesin' },
+            { key: 'fuelSystem', value: 'Sistem Bahan Bakar' },
+          ],
+          desc: [
+            { key: 'engineType', value: '4 langkah berpendingin cairan, DOHC' },
+            { key: 'cylinderArrangement', value: '2 Silinder / Tegak' },
+            { key: 'boreStroke', value: '60,0 x 44,1 mm' },
+            { key: 'compressionRatio', value: '11,6 : 1' },
+            { key: 'maxPower', value: '26.5 kW / 12.000 rpm' },
+            { key: 'maxTorque', value: '23.6 Nm / 10.000 rpm' },
+            { key: 'starterSystem', value: 'Elektrik Starter' },
+            { key: 'lubricationSystem', value: 'Basah' },
+            {
+              key: 'oilCapacity',
+              value:
+                'total = 2,40L ; berkala = 1,80L ; ganti filter oli = 2,10L',
+            },
+            { key: 'fuelSystem', value: 'Fuel Injection' },
+          ],
+        },
+        {
+          section: 'dimensi',
+          title: [
+            { key: 'groundClearance', value: 'Jarak Terendah Ke Tanah' },
+            { key: 'seatHeight', value: 'Tinggi Tempat Duduk' },
+            { key: 'weight', value: 'Berat Isi' },
+            { key: 'fuelTankCapacity', value: 'Kapasitas Tangki Bensin' },
+            { key: 'dimension', value: 'P x L x T' },
+            { key: 'wheelbase', value: 'Jarak Sumbu Roda' },
+          ],
+          desc: [
+            { key: 'groundClearance', value: '160 mm' },
+            { key: 'seatHeight', value: '780 mm' },
+            { key: 'weight', value: '165 kg' },
+            { key: 'fuelTankCapacity', value: '14 Liter' },
+            { key: 'dimension', value: '2.090 mm x 755 mm x 1.071 mm' },
+            { key: 'wheelbase', value: '1.380 mm' },
+          ],
+        },
+        {
+          section: 'rangka',
+          title: [
+            { key: 'frameType', value: 'Tipe Rangka' },
+            { key: 'frontSuspension', value: 'Suspensi Depan' },
+            { key: 'rearSuspension', value: 'Suspensi Belakang' },
+            { key: 'frontTire', value: 'Ban Depan' },
+            { key: 'rearTire', value: 'Ban Belakang' },
+            { key: 'frontBrake', value: 'Rem Depan' },
+            { key: 'rearBrake', value: 'Rem Belakang' },
+          ],
+          desc: [
+            { key: 'frameType', value: 'Diamond' },
+            { key: 'frontSuspension', value: 'Teleskopik Fork (Inverted)' },
+            { key: 'rearSuspension', value: 'Linkless Monoshock' },
+            { key: 'frontTire', value: '110/70-17M/C (54S)' },
+            { key: 'rearTire', value: '140/70-17M/C (66S)' },
+            { key: 'frontBrake', value: 'Single Disc Brake' },
+            { key: 'rearBrake', value: 'Single Disc Brake' },
+          ],
+        },
+        {
+          section: 'kelistrikan',
+          title: [
+            { key: 'ignitionSystem', value: 'Sistem Pengapian' },
+            { key: 'batteryType', value: 'Battery' },
+            { key: 'sparkPlugType', value: 'Tipe Busi' },
+          ],
+          desc: [
+            { key: 'ignitionSystem', value: 'TCI' },
+            { key: 'batteryType', value: 'GTZ8V' },
+            { key: 'sparkPlugType', value: 'NGK/CR9E' },
+          ],
+        },
+      ],
+    },
   },
   {
     image: '/images/motor-home/balck-red-300x264.png',
@@ -158,6 +376,119 @@ export const motorListHome: ProdukInterface[] = [
     category: 'Moped',
     price: 'Rp17.750.000',
     priceNum: 17750000,
+    additionalInfo: ['Yamaha Vega Force DB CW Rp. 19.045.000'],
+    tags: ['moped', 'vega force'],
+    description: {
+      specifications: [
+        {
+          section: 'mesin',
+          title: [
+            { key: 'engineType', value: 'Tipe Mesin' },
+            { key: 'cylinderArrangement', value: 'Jumlah / Posisi Silinder' },
+            { key: 'boreStroke', value: 'Diameter x Langkah' },
+            { key: 'compressionRatio', value: 'Perbandingan Kompresi' },
+            { key: 'maxPower', value: 'Daya Maksimum' },
+            { key: 'maxTorque', value: 'Torsi Maksimum' },
+            { key: 'starterSystem', value: 'Sistem Starter' },
+            { key: 'lubricationSystem', value: 'Sistem Pelumasan' },
+            { key: 'oilCapacity', value: 'Kapasitas Oli Mesin' },
+            { key: 'fuelSystem', value: 'Sistem Bahan Bakar' },
+            { key: 'clutchType', value: 'Tipe Kopling' },
+            { key: 'transmissionType', value: 'Tipe Transmisi' },
+          ],
+          desc: [
+            { key: 'engineType', value: '4 Langkah, SOHC, Berpendingin Udara' },
+            {
+              key: 'cylinderArrangement',
+              value: 'Silinder Tunggal / Mendatar',
+            },
+            { key: 'boreStroke', value: '50,0 x 57,9 mm' },
+            { key: 'compressionRatio', value: '9,3 : 1' },
+            { key: 'maxPower', value: '6,41 kW / 7000 rpm' },
+            { key: 'maxTorque', value: '9,53 Nm / 5500 rpm' },
+            {
+              key: 'starterSystem',
+              value: 'Electric Starter dan Kick Starter',
+            },
+            { key: 'lubricationSystem', value: 'Basah' },
+            {
+              key: 'oilCapacity',
+              value:
+                'Total = 1,0 Liter ; Penggantian Berkala = 0,80 Liter ; Ganti Filter Oli = 0,85 Liter',
+            },
+            { key: 'fuelSystem', value: 'Fuel Injection System (FI)' },
+            { key: 'clutchType', value: 'Basah, Kopling Otomatis, Multiplat' },
+            { key: 'transmissionType', value: 'Constant Mesh, 4 Kecepatan' },
+          ],
+        },
+        {
+          section: 'dimensi',
+          title: [
+            { key: 'frameType', value: 'Tipe Rangka' },
+            { key: 'frontSuspension', value: 'Suspensi Depan' },
+            { key: 'rearSuspension', value: 'Suspensi Belakang' },
+            { key: 'frontTire', value: 'Ban Depan' },
+            { key: 'rearTire', value: 'Ban Belakang' },
+            { key: 'frontBrake', value: 'Rem Depan' },
+            { key: 'rearBrake', value: 'Rem Belakang' },
+          ],
+          desc: [
+            { key: 'frameType', value: 'Backbone' },
+            { key: 'frontSuspension', value: 'Teleskopik' },
+            { key: 'rearSuspension', value: 'Swing Arm' },
+            {
+              key: 'frontTire',
+              value:
+                '70/90-17MC 38P (CW+Fr.Disc Brake) ; 70/90-17MC 38L (SW+Fr.Disc Brake)',
+            },
+            {
+              key: 'rearTire',
+              value:
+                '80/90-17MC 44P (CW+Fr.Disc Brake) ; 80/90-17MC 44L (SW+Fr.Disc Brake)',
+            },
+            { key: 'frontBrake', value: 'Disc Brake' },
+            { key: 'rearBrake', value: 'Drum Brake' },
+          ],
+        },
+        {
+          section: 'rangka',
+          title: [
+            { key: 'frameType', value: 'Tipe Rangka' },
+            { key: 'frontSuspension', value: 'Suspensi Depan' },
+            { key: 'rearSuspension', value: 'Suspensi Belakang' },
+            { key: 'frontTire', value: 'Ban Depan' },
+            { key: 'rearTire', value: 'Ban Belakang' },
+            { key: 'frontBrake', value: 'Rem Depan' },
+            { key: 'rearBrake', value: 'Rem Belakang' },
+          ],
+          desc: [
+            { key: 'frameType', value: 'Backbone' },
+            { key: 'frontSuspension', value: 'Teleskopik' },
+            { key: 'rearSuspension', value: 'Monoshock' },
+            { key: 'frontTire', value: '90/80-17M/C (46P)' },
+            { key: 'rearTire', value: '120/70-17M/C (58P)' },
+            { key: 'frontBrake', value: 'Rem Cakram' },
+            { key: 'rearBrake', value: 'Rem Cakram' },
+          ],
+        },
+        {
+          section: 'kelistrikan',
+          title: [
+            { key: 'ignitionSystem', value: 'Sistem Pengapian' },
+            { key: 'batteryType', value: 'Battery' },
+            { key: 'sparkPlugType', value: 'Tipe Busi' },
+          ],
+          desc: [
+            {
+              key: 'ignitionSystem',
+              value: 'TCI (Transistor Control Ignition)',
+            },
+            { key: 'batteryType', value: 'YTZ4V/GTZ4V' },
+            { key: 'sparkPlugType', value: 'NGK/CR6HSA' },
+          ],
+        },
+      ],
+    },
   },
   {
     image: '/images/motor-home/202503052220488174P45627-300x264.png',
@@ -166,6 +497,98 @@ export const motorListHome: ProdukInterface[] = [
     category: 'Matic',
     price: 'Rp21.700.000',
     priceNum: 21700000,
+    tags: ['Gear', 'gear s', 'matic'],
+    description: {
+      specifications: [
+        {
+          section: 'mesin',
+          title: [
+            { key: 'engineType', value: 'Tipe Mesin' },
+            { key: 'cylinderArrangement', value: 'Jumlah / Posisi Silinder' },
+            { key: 'boreStroke', value: 'Diameter x Langkah' },
+            { key: 'engineDisplacement', value: 'Volume Silinder' },
+            { key: 'maxPower', value: 'Daya Maksimum' },
+            { key: 'maxTorque', value: 'Torsi Maksimum' },
+            { key: 'oilCapacity', value: 'Kapasitas Oli Mesin' },
+            { key: 'fuelSystem', value: 'Sistem Bahan Bakar' },
+            { key: 'clutchType', value: 'Tipe Kopling' },
+            { key: 'transmissionType', value: 'Tipe Transmisi' },
+            { key: 'lubricationSystem', value: 'Sistem Pelumasan' },
+            { key: 'starterSystem', value: 'Sistem Starter' },
+          ],
+          desc: [
+            { key: 'engineType', value: 'Berpendingin udara, 4 Langkah, SOHC' },
+            { key: 'cylinderArrangement', value: 'Silinder Tunggal' },
+            { key: 'boreStroke', value: '52,4mm x 57,9mm' },
+            { key: 'engineDisplacement', value: '124,86cc' },
+            { key: 'maxPower', value: '6,2 kW / 6.500 rpm' },
+            { key: 'maxTorque', value: '10,6 Nm / 4.500 rpm' },
+            {
+              key: 'oilCapacity',
+              value: 'Assembly = 0,84L ; Berkala = 0,80 L',
+            },
+            { key: 'fuelSystem', value: 'Fuel Injeksi' },
+            { key: 'clutchType', value: 'Kopling Sentrifugal, Kering' },
+            { key: 'transmissionType', value: 'V-Belt Otomatis' },
+            { key: 'lubricationSystem', value: 'Basah' },
+            { key: 'starterSystem', value: 'Elektrik Starter' },
+          ],
+        },
+        {
+          section: 'dimensi',
+          title: [
+            { key: 'dimension', value: 'P x L x T' },
+            { key: 'wheelbase', value: 'Jarak Sumbu Roda' },
+            { key: 'groundClearance', value: 'Jarak Terendah Ke Tanah' },
+            { key: 'weight', value: 'Berat Isi' },
+            { key: 'fuelTankCapacity', value: 'Kapasitas Tangki Bensin' },
+            { key: 'seatHeight', value: 'Tinggi Tempat Duduk' },
+          ],
+          desc: [
+            { key: 'dimension', value: '1.850 mm x 685 mm x 1.075 mm' },
+            { key: 'wheelbase', value: '1.280 mm' },
+            { key: 'groundClearance', value: '135 mm' },
+            { key: 'weight', value: '95 kg' },
+            { key: 'fuelTankCapacity', value: '5,1 L' },
+            { key: 'seatHeight', value: '750 mm' },
+          ],
+        },
+        {
+          section: 'rangka',
+          title: [
+            { key: 'frameType', value: 'Tipe Rangka' },
+            { key: 'frontSuspension', value: 'Suspensi Depan' },
+            { key: 'rearSuspension', value: 'Suspensi Belakang' },
+            { key: 'frontTire', value: 'Ban Depan' },
+            { key: 'rearTire', value: 'Ban Belakang' },
+            { key: 'frontBrake', value: 'Rem Depan' },
+            { key: 'rearBrake', value: 'Rem Belakang' },
+          ],
+          desc: [
+            { key: 'frameType', value: 'Underbone' },
+            { key: 'frontSuspension', value: 'Teleskopik' },
+            { key: 'rearSuspension', value: 'Unit Swing' },
+            { key: 'frontTire', value: '110/70-12 47L' },
+            { key: 'rearTire', value: '110/70-12 47L' },
+            { key: 'frontBrake', value: 'Rem Cakram' },
+            { key: 'rearBrake', value: 'Rem Tromol' },
+          ],
+        },
+        {
+          section: 'kelistrikan',
+          title: [
+            { key: 'ignitionSystem', value: 'Sistem Pengapian' },
+            { key: 'batteryType', value: 'Battery' },
+            { key: 'sparkPlugType', value: 'Tipe Busi' },
+          ],
+          desc: [
+            { key: 'ignitionSystem', value: 'TCI' },
+            { key: 'batteryType', value: 'YTZ6V' },
+            { key: 'sparkPlugType', value: 'NGK/CR6HSA' },
+          ],
+        },
+      ],
+    },
   },
   {
     image: '/images/motor-home/Silver-Yellow-300x264.png',
@@ -174,6 +597,120 @@ export const motorListHome: ProdukInterface[] = [
     category: 'Maxi',
     price: 'Rp30.685.000',
     priceNum: 30685000,
+    tags: ['aerox', 'aerox cybercity', 'aerox s', 'maxi'],
+    description: {
+      specifications: [
+        {
+          section: 'mesin',
+          title: [
+            { key: 'engineType', value: 'Tipe Mesin' },
+            { key: 'cylinderArrangement', value: 'Jumlah Silinder' },
+            { key: 'boreStroke', value: 'Diameter x Langkah' },
+            { key: 'engineDisplacement', value: 'Kapasitas Mesin' },
+            { key: 'maxPower', value: 'Daya Maksimum' },
+            { key: 'maxTorque', value: 'Torsi Maksimum' },
+            { key: 'starterSystem', value: 'Sistem Starter' },
+            { key: 'lubricationSystem', value: 'Sistem Pelumasan' },
+            { key: 'oilCapacity', value: 'Kapasitas Oli Mesin' },
+            { key: 'fuelSystem', value: 'Sistem Bahan Bakar' },
+            { key: 'clutchType', value: 'Tipe Kopling' },
+            { key: 'transmissionType', value: 'Tipe Transmisi' },
+            { key: 'compressionRatio', value: 'Perbandingan Kompresi' },
+          ],
+          desc: [
+            {
+              key: 'engineType',
+              value: '4 Langkah, berpendingin cairan, SOHC 4 katup, VVA',
+            },
+            { key: 'cylinderArrangement', value: 'Silinder Tunggal' },
+            { key: 'boreStroke', value: '58 x 58,7 mm' },
+            { key: 'engineDisplacement', value: '155,09cc' },
+            { key: 'maxPower', value: '11,3 kW (15,4 PS) / 8000 rpm' },
+            { key: 'maxTorque', value: '14,2 Nm / 8000 rpm' },
+            { key: 'starterSystem', value: 'Electric Strater' },
+            { key: 'lubricationSystem', value: 'Pelumasan Basah' },
+            {
+              key: 'oilCapacity',
+              value:
+                '1,00 L (TURBO & TURBO Ultimate), 0,90 L (Standard & CyberCity)',
+            },
+            { key: 'fuelSystem', value: 'Fuel Injection' },
+            { key: 'clutchType', value: 'Kopling sentrifugal, Kering' },
+            {
+              key: 'transmissionType',
+              value: 'V-Belt Otomatis / YECVT (TURBO & TURBO Ultimate)',
+            },
+            { key: 'compressionRatio', value: '11,6 : 1' },
+          ],
+        },
+        {
+          section: 'dimensi',
+          title: [
+            { key: 'fuelTankCapacity', value: 'Kapasitas Tangki Bensin' },
+            { key: 'dimension', value: 'P x L x T' },
+            { key: 'wheelbase', value: 'Jarak Sumbu Roda' },
+            { key: 'groundClearance', value: 'Jarak Terendah ke Tanah' },
+            { key: 'seatHeight', value: 'Tinggi Tempat Duduk' },
+            { key: 'weight', value: 'Berat Isi' },
+          ],
+          desc: [
+            { key: 'fuelTankCapacity', value: '5,5 L' },
+            { key: 'dimension', value: '1980mm x 710mm x 1170mm' },
+            { key: 'wheelbase', value: '1350mm' },
+            { key: 'groundClearance', value: '145mm' },
+            { key: 'seatHeight', value: '790mm' },
+            {
+              key: 'weight',
+              value:
+                '130 Kg (TURBO & TURBO Ultimate), 127 Kg (CyberCity), 124 Kg (Standard)',
+            },
+          ],
+        },
+        {
+          section: 'rangka',
+          title: [
+            { key: 'frameType', value: 'Tipe Rangka' },
+            { key: 'frontSuspension', value: 'Suspensi Depan' },
+            { key: 'rearSuspension', value: 'Suspensi Belakang' },
+            { key: 'tireType', value: 'Tipe Ban' },
+            { key: 'frontTire', value: 'Ban Depan' },
+            { key: 'rearTire', value: 'Ban Belakang' },
+            { key: 'frontBrake', value: 'Rem Depan' },
+            { key: 'rearBrake', value: 'Rem Belakang' },
+          ],
+          desc: [
+            { key: 'frameType', value: 'Underbone' },
+            {
+              key: 'frontSuspension',
+              value: 'Telescopic with 30mm Inner Tubes',
+            },
+            { key: 'rearSuspension', value: 'Unit Swing' },
+            { key: 'tireType', value: 'Tubeless' },
+            { key: 'frontTire', value: '110/80-14/C 53P' },
+            { key: 'rearTire', value: '140/70-14/C 62P' },
+            { key: 'frontBrake', value: 'Disc Brake' },
+            { key: 'rearBrake', value: 'Disc Brake' },
+          ],
+        },
+        {
+          section: 'kelistrikan',
+          title: [
+            { key: 'ignitionSystem', value: 'Sistem Pengapian' },
+            { key: 'batteryType', value: 'Tipe Baterai' },
+            { key: 'sparkPlugType', value: 'Tipe Busi' },
+          ],
+          desc: [
+            { key: 'ignitionSystem', value: 'TCI' },
+            {
+              key: 'batteryType',
+              value:
+                'YTZ7V (TURBO & TURBO Ultimate), YTZ6V (Standard & CyberCity)',
+            },
+            { key: 'sparkPlugType', value: 'NGK/CPR8EA-9' },
+          ],
+        },
+      ],
+    },
   },
   {
     image: '/images/motor-home/YZ250FX-blue-300x264.png',
@@ -182,6 +719,101 @@ export const motorListHome: ProdukInterface[] = [
     category: 'Off-Road',
     price: 'Rp98.900.000',
     priceNum: 98900000,
+    tags: ['off road', 'yz250fx'],
+    description: {
+      specifications: [
+        {
+          section: 'mesin',
+          title: [
+            { key: 'engineType', value: 'Engine Type' },
+            { key: 'boreStroke', value: 'Bore x Stroke' },
+            { key: 'compressionRatio', value: 'Compression Ratio' },
+            { key: 'fuelSystem', value: 'Fuel Delivery' },
+            { key: 'transmissionType', value: 'Transmission' },
+            { key: 'finalDrive', value: 'Final Drive' },
+          ],
+          desc: [
+            {
+              key: 'engineType',
+              value: '250cc liquid-cooled DOHC 4-stroke; 4 titanium valves',
+            },
+            { key: 'boreStroke', value: '77.0mm × 53.6mm' },
+            { key: 'compressionRatio', value: '13.8:1' },
+            { key: 'fuelSystem', value: 'Mikuni® fuel injection, 44mm' },
+            {
+              key: 'transmissionType',
+              value: '6-speed; multiplate wet clutch',
+            },
+            { key: 'finalDrive', value: 'Chain' },
+          ],
+        },
+        {
+          section: 'dimensi',
+          title: [
+            { key: 'dimension', value: 'L x W x H' },
+            { key: 'seatHeight', value: 'Seat Height' },
+            { key: 'wheelbase', value: 'Wheelbase' },
+            { key: 'rakeAngle', value: 'Rake (Caster Angle)' },
+            { key: 'trail', value: 'Trail' },
+            { key: 'groundClearance', value: 'Maximum Ground Clearance' },
+            { key: 'fuelTankCapacity', value: 'Fuel Capacity' },
+            { key: 'weight', value: 'Wet Weight' },
+          ],
+          desc: [
+            {
+              key: 'dimension',
+              value: '85.6 in x 32.5 in x 50.4 in (2174 mm x 826 mm x 1280 mm)',
+            },
+            { key: 'seatHeight', value: '37.6 in (955 mm)' },
+            { key: 'wheelbase', value: '58.3 in (1481 mm)' },
+            { key: 'rakeAngle', value: '27.2°' },
+            { key: 'trail', value: '4.6 in (117 mm)' },
+            { key: 'groundClearance', value: '12.6 in (320 mm)' },
+            { key: 'fuelTankCapacity', value: '2.2 US gal (8.2 liter)' },
+            { key: 'weight', value: '245 lb (111 kg)' },
+          ],
+        },
+        {
+          section: 'rangka',
+          title: [
+            { key: 'frontSuspension', value: 'Suspension / Front' },
+            { key: 'rearSuspension', value: 'Suspension / Rear' },
+            { key: 'frontBrake', value: 'Brakes / Front' },
+            { key: 'rearBrake', value: 'Brakes / Rear' },
+            { key: 'frontTire', value: 'Tires / Front' },
+            { key: 'rearTire', value: 'Tires / Rear' },
+          ],
+          desc: [
+            {
+              key: 'frontSuspension',
+              value:
+                'KYB® spring-type fork with speed sensitive damping; fully adjustable, 12.2-in travel',
+            },
+            {
+              key: 'rearSuspension',
+              value: 'KYB® single shock, fully adjustable, 12.5-in travel',
+            },
+            { key: 'frontBrake', value: 'Hydraulic disc, 270mm' },
+            { key: 'rearBrake', value: 'Hydraulic disc, 245mm' },
+            { key: 'frontTire', value: '80/100-21 Dunlop® Geomax MX33F' },
+            { key: 'rearTire', value: '110/90-18 Dunlop® Geomax MX33' },
+          ],
+        },
+        {
+          section: 'kelistrikan',
+          title: [
+            { key: 'ignitionSystem', value: 'Sistem Pengapian' },
+            { key: 'batteryType', value: 'Battery' },
+            { key: 'sparkPlugType', value: 'Tipe Busi' },
+          ],
+          desc: [
+            { key: 'ignitionSystem', value: 'TCI / Transistor' },
+            { key: 'batteryType', value: 'BR98' },
+            { key: 'sparkPlugType', value: 'LMAR9E-J' },
+          ],
+        },
+      ],
+    },
   },
   {
     image: '/images/motor-home/YZ250F-blue-300x264.png',
@@ -190,6 +822,101 @@ export const motorListHome: ProdukInterface[] = [
     category: 'Off-Road',
     price: 'Rp105.500.000',
     priceNum: 105500000,
+    tags: ['off road', 'yz250f'],
+    description: {
+      specifications: [
+        {
+          section: 'mesin',
+          title: [
+            { key: 'engineType', value: 'Engine Type' },
+            { key: 'boreStroke', value: 'Bore x Stroke' },
+            { key: 'compressionRatio', value: 'Compression Ratio' },
+            { key: 'fuelSystem', value: 'Fuel Delivery' },
+            { key: 'transmissionType', value: 'Transmission' },
+            { key: 'finalDrive', value: 'Final Drive' },
+          ],
+          desc: [
+            {
+              key: 'engineType',
+              value: '250cc liquid-cooled DOHC 4-stroke; 4 valves',
+            },
+            { key: 'boreStroke', value: '77.0mm × 53.6mm' },
+            { key: 'compressionRatio', value: '13.8:1' },
+            { key: 'fuelSystem', value: 'Mikuni® fuel injection, 44mm' },
+            {
+              key: 'transmissionType',
+              value: 'Constant-mesh 5-speed; multiplate wet clutch',
+            },
+            { key: 'finalDrive', value: 'Chain' },
+          ],
+        },
+        {
+          section: 'dimensi',
+          title: [
+            { key: 'dimension', value: 'L x W x H' },
+            { key: 'seatHeight', value: 'Seat Height' },
+            { key: 'wheelbase', value: 'Wheelbase' },
+            { key: 'rakeAngle', value: 'Rake (Caster Angle)' },
+            { key: 'trail', value: 'Trail' },
+            { key: 'groundClearance', value: 'Maximum Ground Clearance' },
+            { key: 'fuelTankCapacity', value: 'Fuel Capacity' },
+            { key: 'weight', value: 'Wet Weight' },
+          ],
+          desc: [
+            {
+              key: 'dimension',
+              value: '85.6 in x 32.5 in x 50.6 in (2174 mm x 826 mm x 1285 mm)',
+            },
+            { key: 'seatHeight', value: '38.2 in (970 mm)' },
+            { key: 'wheelbase', value: '58.1 in (1476 mm)' },
+            { key: 'rakeAngle', value: '26.8°' },
+            { key: 'trail', value: '4.7 in (119 mm)' },
+            { key: 'groundClearance', value: '13.2 in (335 mm)' },
+            { key: 'fuelTankCapacity', value: '1.6 gal (6 liter)' },
+            { key: 'weight', value: '234 lb (106 kg)' },
+          ],
+        },
+        {
+          section: 'rangka',
+          title: [
+            { key: 'frontSuspension', value: 'Suspension / Front' },
+            { key: 'rearSuspension', value: 'Suspension / Rear' },
+            { key: 'frontBrake', value: 'Brakes / Front' },
+            { key: 'rearBrake', value: 'Brakes / Rear' },
+            { key: 'frontTire', value: 'Tires / Front' },
+            { key: 'rearTire', value: 'Tires / Rear' },
+          ],
+          desc: [
+            {
+              key: 'frontSuspension',
+              value:
+                'KYB® Speed-Sensitive System inverted fork; fully adjustable, 12.2-in travel',
+            },
+            {
+              key: 'rearSuspension',
+              value: 'KYB® single shock; fully adjustable, 12.5-in travel',
+            },
+            { key: 'frontBrake', value: 'Hydraulic disc, 270mm' },
+            { key: 'rearBrake', value: 'Hydraulic disc, 245mm' },
+            { key: 'frontTire', value: '80/100-21 Dunlop® Geomax MX33F' },
+            { key: 'rearTire', value: '110/90-19 Dunlop® Geomax MX33' },
+          ],
+        },
+        {
+          section: 'kelistrikan',
+          title: [
+            { key: 'ignitionSystem', value: 'Sistem Pengapian' },
+            { key: 'batteryType', value: 'Battery' },
+            { key: 'sparkPlugType', value: 'Busi' },
+          ],
+          desc: [
+            { key: 'ignitionSystem', value: 'TCI / Transistor' },
+            { key: 'batteryType', value: 'BR98' },
+            { key: 'sparkPlugType', value: 'LMAR9E-J' },
+          ],
+        },
+      ],
+    },
   },
   {
     image: '/images/motor-home/matte-black-300x265.png',
@@ -198,6 +925,134 @@ export const motorListHome: ProdukInterface[] = [
     category: 'Sport',
     price: 'Rp33.735.000',
     priceNum: 33735000,
+    tags: ['sport', 'vixion', 'vixion r'],
+    description: {
+      specifications: [
+        {
+          section: 'mesin',
+          title: [
+            { key: 'fuelSystem', value: 'Sistem Bahan Bakar' },
+            { key: 'clutchType', value: 'Tipe Kopling' },
+            { key: 'transmissionType', value: 'Tipe Transmisi' },
+            { key: 'engineType', value: 'Tipe Mesin' },
+            { key: 'cylinderArrangement', value: 'Susunan Silinder' },
+            { key: 'boreStroke', value: 'Diameter x Langkah' },
+            { key: 'compressionRatio', value: 'Perbandingan Kompresi' },
+            { key: 'displacement', value: 'Volume Silinder' },
+            { key: 'maxPower', value: 'Daya Maksimum' },
+            { key: 'maxTorque', value: 'Torsi Maksimum' },
+            { key: 'starterSystem', value: 'Sistem Starter' },
+            { key: 'lubricationSystem', value: 'Sistem Pelumasan' },
+          ],
+          desc: [
+            { key: 'fuelSystem', value: 'Fuel Injection' },
+            {
+              key: 'clutchType',
+              value: 'Wet Type Multi-Plate Clutch; Assist & Slipper Clutch',
+            },
+            { key: 'transmissionType', value: 'Manual' },
+            {
+              key: 'engineType',
+              value:
+                'Liquid Cooled 4-Stroke, SOHC, 4 Valve, VVA (Vixion R), Liquid Cooled 4-stroke, SOHC (Vixion)',
+            },
+            { key: 'cylinderArrangement', value: 'Single Cylinder' },
+            {
+              key: 'boreStroke',
+              value: '58 x 58.7 mm (Vixion R), 57 x 58.7 mm (Vixion)',
+            },
+            {
+              key: 'compressionRatio',
+              value: '11.6±0.4 : 1 (Vixion R), 10.4 : 1 (Vixion)',
+            },
+            {
+              key: 'displacement',
+              value: '155.1 cc (Vixion R), 149.8 cc (Vixion)',
+            },
+            {
+              key: 'maxPower',
+              value:
+                '14.2 kW / 10000 rpm (Vixion R), 12.2 kW / 8500 rpm (Vixion)',
+            },
+            {
+              key: 'maxTorque',
+              value:
+                '14.7 Nm / 8500 rpm (Vixion R), 14.5 Nm / 7500 rpm (Vixion)',
+            },
+            { key: 'starterSystem', value: 'Electric Starter' },
+            { key: 'lubricationSystem', value: 'Wet Sump' },
+          ],
+        },
+        {
+          section: 'dimensi',
+          title: [
+            { key: 'dimension', value: 'P x L x T (Length x Width x Height)' },
+            { key: 'wheelbase', value: 'Jarak Sumbu Roda' },
+            { key: 'groundClearance', value: 'Jarak Terendah ke Tanah' },
+            { key: 'seatHeight', value: 'Tinggi Tempat Duduk' },
+            { key: 'weight', value: 'Berat Isi' },
+            { key: 'fuelTankCapacity', value: 'Kapasitas Tangki Bensin' },
+          ],
+          desc: [
+            {
+              key: 'dimension',
+              value:
+                '1950 x 720 x 1025 mm (Vixion R), 1955 x 720 x 1025 mm (Vixion)',
+            },
+            { key: 'wheelbase', value: '1320 mm (Vixion R), 1295 mm (Vixion)' },
+            { key: 'groundClearance', value: '165 mm' },
+            { key: 'seatHeight', value: '795 mm' },
+            { key: 'weight', value: '131 kg (Vixion R), 132 kg (Vixion)' },
+            {
+              key: 'fuelTankCapacity',
+              value: '11 L (Vixion R), 12 L (Vixion)',
+            },
+          ],
+        },
+        {
+          section: 'rangka',
+          title: [
+            { key: 'frontSuspension', value: 'Suspensi Depan' },
+            { key: 'rearSuspension', value: 'Suspensi Belakang' },
+            { key: 'tireType', value: 'Tipe Ban' },
+            { key: 'frontTire', value: 'Ban Depan' },
+            { key: 'rearTire', value: 'Ban Belakang' },
+            { key: 'frontBrake', value: 'Rem Depan' },
+            { key: 'rearBrake', value: 'Rem Belakang' },
+            { key: 'frameType', value: 'Tipe Rangka' },
+          ],
+          desc: [
+            { key: 'frontSuspension', value: 'Teleskopik' },
+            { key: 'rearSuspension', value: 'Swing Arm' },
+            { key: 'tireType', value: 'Tubeless' },
+            { key: 'frontTire', value: '90/80-17M/C 46P' },
+            {
+              key: 'rearTire',
+              value: '130/70-17M/C 62P (Vixion R), 120/70-17M/C 58P (Vixion)',
+            },
+            { key: 'frontBrake', value: 'Disc Brake' },
+            { key: 'rearBrake', value: 'Disc Brake' },
+            { key: 'frameType', value: 'Deltabox' },
+          ],
+        },
+        {
+          section: 'kelistrikan',
+          title: [
+            { key: 'sparkPlugType', value: 'Tipe Busi' },
+            { key: 'ignitionSystem', value: 'Sistem Pengapian' },
+            { key: 'batteryType', value: 'Battery' },
+          ],
+          desc: [
+            {
+              key: 'sparkPlugType',
+              value: 'NGK/MR8E9 (Vixion R), NGK/CR8E (Vixion)',
+            },
+            { key: 'ignitionSystem', value: 'TCI' },
+            { key: 'batteryType', value: 'YTZ4V / GTZ4V' },
+          ],
+        },
+      ],
+    },
   },
   {
     image: '/images/motor-home/metallic-cyan-1-300x264.png',
@@ -206,6 +1061,105 @@ export const motorListHome: ProdukInterface[] = [
     category: 'Moped',
     price: 'Rp21.520.000',
     priceNum: 21520000,
+    tags: ['jupiter z1', 'moped'],
+    description: {
+      specifications: [
+        {
+          section: 'mesin',
+          title: [
+            { key: 'engineType', value: 'Tipe Mesin' },
+            { key: 'cylinderArrangement', value: 'Jumlah / Posisi Silinder' },
+            { key: 'boreStroke', value: 'Diameter x Langkah' },
+            { key: 'compressionRatio', value: 'Perbandingan Kompresi' },
+            { key: 'maxPower', value: 'Daya Maksimum' },
+            { key: 'maxTorque', value: 'Torsi Maksimum' },
+            { key: 'starterSystem', value: 'Sistem Starter' },
+            { key: 'lubricationSystem', value: 'Sistem Pelumasan' },
+            { key: 'oilCapacity', value: 'Kapasitas Oli Mesin' },
+            { key: 'fuelSystem', value: 'Sistem Bahan Bakar' },
+            { key: 'clutchType', value: 'Tipe Kopling' },
+            { key: 'transmissionType', value: 'Tipe Transmisi' },
+          ],
+          desc: [
+            { key: 'engineType', value: 'Air cooled 4-stroke, SOHC' },
+            { key: 'cylinderArrangement', value: 'Single Cylinder / Mendatar' },
+            { key: 'boreStroke', value: '50,0 x 57,9 mm' },
+            { key: 'compressionRatio', value: '9,3 : 1' },
+            { key: 'maxPower', value: '7,4 kW / 7750 rpm' },
+            { key: 'maxTorque', value: '9,8 Nm / 6750 rpm' },
+            { key: 'starterSystem', value: 'Elektrik Starter & Kick Starter' },
+            { key: 'lubricationSystem', value: 'Basah' },
+            {
+              key: 'oilCapacity',
+              value:
+                'Total = 1,00 L; Berkala = 0,80 L; Ganti filter oli = 0,85 L',
+            },
+            { key: 'fuelSystem', value: 'Fuel Injection' },
+            {
+              key: 'clutchType',
+              value: 'Basah, Multiplat, Centrifugal automatic',
+            },
+            { key: 'transmissionType', value: 'Constant mesh, 4-kecepatan' },
+          ],
+        },
+        {
+          section: 'dimensi',
+          title: [
+            { key: 'dimension', value: 'P x L x T' },
+            { key: 'wheelbase', value: 'Jarak Sumbu Roda' },
+            { key: 'groundClearance', value: 'Jarak Terendah ke Tanah' },
+            { key: 'seatHeight', value: 'Tinggi Tempat Duduk' },
+            { key: 'weight', value: 'Berat Isi' },
+            { key: 'fuelTankCapacity', value: 'Kapasitas Tangki Bensin' },
+          ],
+          desc: [
+            { key: 'dimension', value: '1935mm x 680mm x 1065mm' },
+            { key: 'wheelbase', value: '1240mm' },
+            { key: 'groundClearance', value: '150mm' },
+            { key: 'seatHeight', value: '765mm' },
+            {
+              key: 'weight',
+              value: '101 kg (Spoke wheel); 102 kg (Cast wheel)',
+            },
+            { key: 'fuelTankCapacity', value: '4,1 L' },
+          ],
+        },
+        {
+          section: 'rangka',
+          title: [
+            { key: 'frameType', value: 'Tipe Rangka' },
+            { key: 'frontSuspension', value: 'Suspensi Depan' },
+            { key: 'rearSuspension', value: 'Suspensi Belakang' },
+            { key: 'frontTire', value: 'Ban Depan' },
+            { key: 'rearTire', value: 'Ban Belakang' },
+            { key: 'frontBrake', value: 'Rem Depan' },
+            { key: 'rearBrake', value: 'Rem Belakang' },
+          ],
+          desc: [
+            { key: 'frameType', value: 'Backbone' },
+            { key: 'frontSuspension', value: 'Teleskopik' },
+            { key: 'rearSuspension', value: 'Swing Arm' },
+            { key: 'frontTire', value: '70/90-17 M/C (38P)' },
+            { key: 'rearTire', value: '80/90-17 M/C (44P)' },
+            { key: 'frontBrake', value: 'Single Disc Brake' },
+            { key: 'rearBrake', value: 'Drum Brake' },
+          ],
+        },
+        {
+          section: 'kelistrikan',
+          title: [
+            { key: 'ignitionSystem', value: 'Sistem Pengapian' },
+            { key: 'batteryType', value: 'Battery' },
+            { key: 'sparkPlugType', value: 'Tipe Busi' },
+          ],
+          desc: [
+            { key: 'ignitionSystem', value: 'TCI' },
+            { key: 'batteryType', value: 'YTZ4V / GTZ4V' },
+            { key: 'sparkPlugType', value: 'NGK / CR6HSA' },
+          ],
+        },
+      ],
+    },
   },
   {
     image: '/images/motor-home/nmax-turbo-magma-elixir-dark-silver-300x264.png',
@@ -214,6 +1168,105 @@ export const motorListHome: ProdukInterface[] = [
     category: 'Maxi',
     price: 'Rp38.610.000',
     priceNum: 38610000,
+    tags: ['maxi', 'nmax', 'nmax neo', 'nmax s', 'nmax turbo'],
+    description: {
+      specifications: [
+        {
+          section: 'mesin',
+          title: [
+            { key: 'engineType', value: 'Tipe Mesin' },
+            { key: 'engineTypeNeo', value: 'Tipe Mesin Neo' },
+            { key: 'cylinderArrangement', value: 'Jumlah/Posisi Silinder' },
+            { key: 'displacement', value: 'Volume Silinder' },
+            { key: 'boreStroke', value: 'Diameter x Langkah' },
+            { key: 'compressionRatio', value: 'Perbandingan Kompresi' },
+            { key: 'maxPower', value: 'Daya Maksimum' },
+            { key: 'maxTorque', value: 'Torsi Maksimum' },
+            { key: 'starterSystem', value: 'Sistem Starter' },
+            { key: 'lubricationSystem', value: 'Sistem Pelumasan' },
+            { key: 'oilCapacity', value: 'Kapasitas Oli Mesin' },
+            { key: 'fuelSystem', value: 'Sistem Bahan Bakar' },
+            { key: 'clutchType', value: 'Tipe Kopling' },
+            { key: 'transmissionType', value: 'Tipe Transmisi' },
+          ],
+          desc: [
+            {
+              key: 'engineType',
+              value: '155cc Blue Core, VVA, 4 Valve SOHC + YECVT',
+            },
+            {
+              key: 'engineTypeNeo',
+              value: '155cc Blue Core, VVA, 4 Valve SOHC',
+            },
+            { key: 'cylinderArrangement', value: 'Single Cylinder' },
+            { key: 'displacement', value: '155.09 cc' },
+            { key: 'boreStroke', value: '58 mm x 58.7 mm' },
+            { key: 'compressionRatio', value: '11.6 : 1' },
+            { key: 'maxPower', value: '11.3 kW / 8000 rpm' },
+            { key: 'maxTorque', value: '14.2 Nm / 6500 rpm' },
+            { key: 'starterSystem', value: 'Electric Starter' },
+            { key: 'lubricationSystem', value: 'Wet Sump' },
+            { key: 'oilCapacity', value: '1 L' },
+            { key: 'fuelSystem', value: 'Fuel Injection' },
+            { key: 'clutchType', value: 'Single Dry Clutch' },
+            { key: 'transmissionType', value: 'Automatic' },
+          ],
+        },
+        {
+          section: 'dimensi',
+          title: [
+            { key: 'dimension', value: 'P x L x T' },
+            { key: 'wheelbase', value: 'Jarak Sumbu Roda' },
+            { key: 'groundClearance', value: 'Jarak Terendah Ke Tanah' },
+            { key: 'seatHeight', value: 'Tinggi Tempat Duduk' },
+            { key: 'weight', value: 'Berat Isi' },
+            { key: 'fuelTankCapacity', value: 'Kapasitas Tangki Bensin' },
+          ],
+          desc: [
+            { key: 'dimension', value: '1.935 mm x 740 mm x 1.200 mm' },
+            { key: 'wheelbase', value: '1340 mm' },
+            { key: 'groundClearance', value: '125 mm' },
+            { key: 'seatHeight', value: '770 mm' },
+            { key: 'weight', value: '135 Kg' },
+            { key: 'fuelTankCapacity', value: '7.1 L' },
+          ],
+        },
+        {
+          section: 'rangka',
+          title: [
+            { key: 'frameType', value: 'Tipe Rangka' },
+            { key: 'frontSuspension', value: 'Suspensi Depan' },
+            { key: 'rearSuspension', value: 'Suspensi Belakang' },
+            { key: 'frontTire', value: 'Ban Depan' },
+            { key: 'rearTire', value: 'Ban Belakang' },
+            { key: 'frontBrake', value: 'Rem Depan' },
+            { key: 'rearBrake', value: 'Rem Belakang' },
+          ],
+          desc: [
+            { key: 'frameType', value: 'Underbone' },
+            { key: 'frontSuspension', value: 'Teleskopik' },
+            { key: 'rearSuspension', value: 'Unit Swing' },
+            { key: 'frontTire', value: '110/70 – 13 M/C 48P' },
+            { key: 'rearTire', value: '130/70 – 13 M/C 63P' },
+            { key: 'frontBrake', value: 'Hydraulic Single Disc Brake' },
+            { key: 'rearBrake', value: 'Hydraulic Single Disc Brake' },
+          ],
+        },
+        {
+          section: 'kelistrikan',
+          title: [
+            { key: 'ignitionSystem', value: 'Sistem Pengapian' },
+            { key: 'batteryType', value: 'Baterai' },
+            { key: 'sparkPlugType', value: 'Tipe Busi' },
+          ],
+          desc: [
+            { key: 'ignitionSystem', value: 'TCI' },
+            { key: 'batteryType', value: 'YTZ6V / YTZ7V' },
+            { key: 'sparkPlugType', value: 'NGK / CPR8EA-9' },
+          ],
+        },
+      ],
+    },
   },
   {
     image: '/images/motor-home/CYAN-1-300x264.png',
@@ -227,6 +1280,105 @@ export const motorListHome: ProdukInterface[] = [
       'Yamaha MX King WGP 60th Rp. 26.710.000',
     ],
     tags: ['moped', 'mx king'],
+    description: {
+      specifications: [
+        {
+          section: 'mesin',
+          title: [
+            { key: 'engineType', value: 'Tipe Mesin' },
+            { key: 'cylinderArrangement', value: 'Jumlah/Posisi Silinder' },
+            { key: 'boreStroke', value: 'Diameter x Langkah' },
+            { key: 'compressionRatio', value: 'Perbandingan Kompresi' },
+            { key: 'displacement', value: 'Kapasitas Mesin' },
+            { key: 'maxPower', value: 'Daya Maksimum' },
+            { key: 'maxTorque', value: 'Torsi Maksimum' },
+            { key: 'starterSystem', value: 'Sistem Starter' },
+            { key: 'lubricationSystem', value: 'Sistem Pelumasan' },
+            { key: 'oilCapacity', value: 'Kapasitas Oli Mesin' },
+            { key: 'fuelSystem', value: 'Sistem Bahan Bakar' },
+            { key: 'clutchType', value: 'Tipe Kopling' },
+            { key: 'transmissionType', value: 'Tipe Transmisi' },
+            { key: 'gearPattern', value: 'Pola Pengoperasian Transmisi' },
+          ],
+          desc: [
+            {
+              key: 'engineType',
+              value: 'Berpendingin cairan, 4 langkah, SOHC, 4 Klep',
+            },
+            { key: 'cylinderArrangement', value: 'Silinder Tunggal / Tegak' },
+            { key: 'boreStroke', value: '57,0 x 58,7 mm' },
+            { key: 'compressionRatio', value: '10,4 : 1' },
+            { key: 'displacement', value: '149,79 cc' },
+            { key: 'maxPower', value: '11,3 kW / 8500 rpm' },
+            { key: 'maxTorque', value: '13,8 Nm / 7000 rpm' },
+            { key: 'starterSystem', value: 'Elektrik Starter & Kick Starter' },
+            { key: 'lubricationSystem', value: 'Basah' },
+            {
+              key: 'oilCapacity',
+              value:
+                'Total = 1,15 L; Berkala = 0,95 L; Ganti filter oli = 1,00 L',
+            },
+            { key: 'fuelSystem', value: 'Fuel Injection' },
+            { key: 'clutchType', value: 'Basah, Kopling Manual, Multiplat' },
+            { key: 'transmissionType', value: 'Constant Mesh, 5-kecepatan' },
+            { key: 'gearPattern', value: '1-N-2-3-4-5' },
+          ],
+        },
+        {
+          section: 'dimensi',
+          title: [
+            { key: 'dimension', value: 'P x L x T' },
+            { key: 'wheelbase', value: 'Jarak Sumbu Roda' },
+            { key: 'groundClearance', value: 'Jarak Terendah ke Tanah' },
+            { key: 'seatHeight', value: 'Tinggi Tempat Duduk' },
+            { key: 'weight', value: 'Berat Isi' },
+            { key: 'fuelTankCapacity', value: 'Kapasitas Tangki Bensin' },
+          ],
+          desc: [
+            { key: 'dimension', value: '1985 mm x 670 mm x 1100 mm' },
+            { key: 'wheelbase', value: '1290 mm' },
+            { key: 'groundClearance', value: '155 mm' },
+            { key: 'seatHeight', value: '795 mm' },
+            { key: 'weight', value: '118 kg' },
+            { key: 'fuelTankCapacity', value: '4,2 L' },
+          ],
+        },
+        {
+          section: 'rangka',
+          title: [
+            { key: 'frameType', value: 'Tipe Rangka' },
+            { key: 'frontSuspension', value: 'Suspensi Depan' },
+            { key: 'rearSuspension', value: 'Suspensi Belakang' },
+            { key: 'frontTire', value: 'Ban Depan' },
+            { key: 'rearTire', value: 'Ban Belakang' },
+            { key: 'frontBrake', value: 'Rem Depan' },
+            { key: 'rearBrake', value: 'Rem Belakang' },
+          ],
+          desc: [
+            { key: 'frameType', value: 'Backbone' },
+            { key: 'frontSuspension', value: 'Teleskopik' },
+            { key: 'rearSuspension', value: 'Monoshock' },
+            { key: 'frontTire', value: '90/80-17M/C (46P)' },
+            { key: 'rearTire', value: '120/70-17M/C (58P)' },
+            { key: 'frontBrake', value: 'Rem Cakram' },
+            { key: 'rearBrake', value: 'Rem Cakram' },
+          ],
+        },
+        {
+          section: 'kelistrikan',
+          title: [
+            { key: 'sparkPlugType', value: 'Tipe Busi' },
+            { key: 'ignitionSystem', value: 'Sistem Pengapian' },
+            { key: 'batteryType', value: 'Battery' },
+          ],
+          desc: [
+            { key: 'sparkPlugType', value: 'NGK / CR8E' },
+            { key: 'ignitionSystem', value: 'TCI' },
+            { key: 'batteryType', value: 'GTZ4V / YTZ4V' },
+          ],
+        },
+      ],
+    },
   },
   {
     image: '/images/motor-home/nmax-neo-s-dull-blue-300x264.png',
