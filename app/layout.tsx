@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     'Dealer resmi Yamaha Bandung. Temukan motor Yamaha terbaru, promo menarik, dan layanan purna jual terbaik di Yamaha Surya Putra Motor Bandung.',
   keywords: [
     'yamaha',
-    'promo',
+    'promo yamaha',
     'bandung',
     'promo yamaha bandung',
     'surya putra motor',
@@ -35,6 +35,7 @@ export const metadata: Metadata = {
     'Fuji Dwi Nila',
     'Promo Motor Yamaha',
     'Promo Yamaha',
+    'promo yamaha spm bandung',
   ],
   authors: [{ name: 'Fuji Dwi Nila' }],
   openGraph: {
