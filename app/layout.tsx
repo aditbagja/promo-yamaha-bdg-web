@@ -20,7 +20,44 @@ const WhatsAppMe = React.lazy(() => import('./components/WhatsAppMe'));
 const WhatsAppMeMemo = React.memo(WhatsAppMe);
 
 export const metadata: Metadata = {
-  title: 'Yamaha Surya Putra Motor - Yamaha Surya Putra Motor Bandung',
+  metadataBase: new URL('https://promoyamahaspmbandung.com'),
+  title:
+    'Yamaha Surya Putra Motor Bandung | Promo Yamaha Surya Putra Motor Bandung',
+  description:
+    'Dealer resmi Yamaha Bandung. Temukan motor Yamaha terbaru, promo menarik, dan layanan purna jual terbaik di Yamaha Surya Putra Motor Bandung.',
+  keywords: [
+    'yamaha',
+    'promo',
+    'bandung',
+    'promo yamaha bandung',
+    'surya putra motor',
+    'fuji dwi nila',
+    'Fuji Dwi Nila',
+    'Promo Motor Yamaha',
+    'Promo Yamaha',
+  ],
+  authors: [{ name: 'Fuji Dwi Nila' }],
+  openGraph: {
+    title:
+      'Yamaha Surya Putra Motor Bandung | Promo Yamaha Surya Putra Motor Bandung',
+    description:
+      'Temukan motor Yamaha terbaru dan promo menarik di Yamaha Surya Putra Motor Bandung.',
+    url: 'https://promoyamahaspmbandung.com',
+    siteName: 'Yamaha Surya Putra Motor Bandung',
+    images: [
+      {
+        url: '/images/logo-spm.png',
+        width: 1200,
+        height: 630,
+        alt: 'Yamaha Surya Putra Motor Bandung',
+      },
+    ],
+    locale: 'id_ID',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://promoyamahaspmbandung.com',
+  },
 };
 
 export default function RootLayout({
