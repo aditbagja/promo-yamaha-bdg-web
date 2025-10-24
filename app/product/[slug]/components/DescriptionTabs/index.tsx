@@ -24,7 +24,7 @@ const MotorSpecSection = ({
   if (!specs) return null;
 
   return (
-    <div className='flex flex-col gap-1'>
+    <div className='flex flex-col gap-5'>
       {specs.title.map((title) => {
         const desc = specs.desc.find((d) => d.key === title.key)?.value ?? '-';
         return (
