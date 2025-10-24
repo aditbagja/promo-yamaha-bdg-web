@@ -93,7 +93,11 @@ const Navbar = () => {
           </div>
           <div className='lg:hidden'>
             <Drawer direction='right'>
-              <DrawerTrigger className='bg-primary rounded-xs p-1'>
+              <DrawerTrigger
+                id='menu'
+                aria-labelledby='menu'
+                className='bg-primary rounded-xs p-1'
+              >
                 <Icon
                   icon='solar:hamburger-menu-outline'
                   width={28}
@@ -193,10 +197,18 @@ const Navbar = () => {
             </Drawer>
           </div>
           <div className='hidden gap-3 lg:flex'>
-            <Link href={instagramLink} target='_blank'>
+            <Link
+              href={instagramLink}
+              target='_blank'
+              aria-label='Instagram Link'
+            >
               <Icon icon='skill-icons:instagram' />
             </Link>
-            <Link href={facebookLink} target='_blank'>
+            <Link
+              href={facebookLink}
+              target='_blank'
+              aria-label='Facebook Link'
+            >
               <Icon icon='devicon:facebook' />
             </Link>
           </div>

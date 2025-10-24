@@ -70,7 +70,7 @@ export const ImagesSlider = ({
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
+    globalThis.addEventListener('keydown', handleKeyDown);
 
     let interval: any;
     if (autoplay) {
@@ -80,7 +80,7 @@ export const ImagesSlider = ({
     }
 
     return () => {
-      window.removeEventListener('keydown', handleKeyDown);
+      globalThis.removeEventListener('keydown', handleKeyDown);
       clearInterval(interval);
     };
   }, [autoplay]);
@@ -144,6 +144,7 @@ export const ImagesSlider = ({
             animate='visible'
             exit={direction === 'up' ? 'upExit' : 'downExit'}
             variants={slideVariants}
+            alt={`image-${currentIndex}`}
             className='image absolute inset-0 h-full w-full object-center md:object-fill'
           />
         </AnimatePresence>

@@ -15,11 +15,7 @@ import * as React from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 
 interface LightboxProps {
-  images: {
-    image: string;
-    width: number;
-    height: number;
-  }[];
+  images: string[];
   initialIndex?: number;
 }
 
@@ -76,12 +72,12 @@ export function Lightbox({
               className='aspect-square overflow-hidden rounded-md md:basis-1/2 lg:basis-1/3 xl:basis-1/4'
             >
               <Image
-                src={src.image}
+                src={src}
                 alt={`Image ${index + 1}`}
                 className='h-full w-full cursor-pointer rounded-md bg-white object-cover p-1 transition-opacity hover:opacity-80'
                 onClick={() => openLightbox(index)}
-                width={src.width}
-                height={src.height}
+                width={800}
+                height={800}
               />
             </CarouselItem>
           ))}
@@ -102,7 +98,7 @@ export function Lightbox({
               >
                 <motion.img
                   key={currentIndex}
-                  src={images[currentIndex].image}
+                  src={images[currentIndex]}
                   alt={`Full size image ${currentIndex + 1}`}
                   className='h-full w-full'
                   initial={{ opacity: 0, scale: 0.8 }}
