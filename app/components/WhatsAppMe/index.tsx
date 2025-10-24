@@ -29,10 +29,7 @@ const WhatsAppMe = () => {
           <div className='flex items-center gap-3 bg-[#075E54] px-4 py-3 text-white'>
             <div className='relative h-10 w-10 rounded-full'>
               <Avatar className='size-10'>
-                <AvatarImage
-                  src='https://github.com/shadcn.png'
-                  alt='Fuji Dwi'
-                />
+                <AvatarImage src='/images/fuji-avatar.png' alt='Fuji Dwi' />
                 <AvatarFallback>FD</AvatarFallback>
               </Avatar>
               <span className='absolute right-0 bottom-0 z-50 h-3 w-3 rounded-full border-2 border-[#075E54] bg-green-500'></span>

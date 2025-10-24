@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ProdukInterface } from '../Produk/Produk.interfaces';
 import Image from 'next/image';
+import { whatsAppPesanMotor } from '@/app/common/constants';
 
 const ProductCard = ({ data }: { data: ProdukInterface }) => {
   return (
@@ -21,11 +22,13 @@ const ProductCard = ({ data }: { data: ProdukInterface }) => {
         </Link>
         <p className='text-secondary text-sm font-semibold'>{data.price}</p>
       </div>
-      <div>
-        <button className='bg-primary hover:bg-secondary rounded-sm px-5 py-3 text-sm text-white transition-all duration-300'>
-          Pesan Disini
-        </button>
-      </div>
+      <a
+        href={whatsAppPesanMotor(data.name)}
+        target='_blank'
+        className='bg-primary hover:bg-secondary w-fit rounded-sm px-5 py-3 text-sm text-white transition-all duration-300'
+      >
+        Pesan Disini
+      </a>
     </div>
   );
 };

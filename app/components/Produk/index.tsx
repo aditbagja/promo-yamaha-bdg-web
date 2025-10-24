@@ -1,3 +1,4 @@
+import { whatsAppPesanMotor } from '@/app/common/constants';
 import { getStyle } from '@/app/styles/styles';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -44,9 +45,13 @@ const Produk = () => {
                   </p>
                 </div>
                 <div className='mx-auto flex'>
-                  <button className='bg-primary hover:bg-secondary cursor-pointer rounded-md px-5 py-3 text-sm text-white transition-all duration-300'>
+                  <a
+                    href={whatsAppPesanMotor(motor.name)}
+                    target='_blank'
+                    className='bg-primary hover:bg-secondary cursor-pointer rounded-md px-5 py-3 text-sm text-white transition-all duration-300'
+                  >
                     Pesan Disini
-                  </button>
+                  </a>
                 </div>
               </div>
             ))}
