@@ -1,8 +1,10 @@
+import { Analytics } from '@vercel/analytics/next';
+import { domAnimation, LazyMotion } from 'framer-motion';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
+import Head from 'next/head';
 import React from 'react';
 import './globals.css';
-import { domAnimation, LazyMotion } from 'framer-motion';
 
 const poppins = Poppins({
   weight: ['300', '400', '500', '600', '700', '800'],
@@ -68,12 +70,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
+      <Head>
+        <title>
+          Yamaha Surya Putra Motor Bandung | Promo Yamaha Surya Putra Motor
+          Bandung
+        </title>
+        <link rel='shortcut icon' href='/favicon.ico' />
+        <meta name='apple-mobile-web-app-title' content='79' />
+        <meta name='msvalidate.01' content='C62998D8767043FD977B9D3909133D33' />
+        <link rel='manifest' href='/site.webmanifest' />
+      </Head>
+
       <body className={`${poppins.className} antialiased`}>
         <NavbarMemo />
         <LazyMotion features={domAnimation}>{children}</LazyMotion>
         <ScrollToTopMemo />
         <FooterMemo />
         <WhatsAppMeMemo />
+        <Analytics />
       </body>
     </html>
   );
