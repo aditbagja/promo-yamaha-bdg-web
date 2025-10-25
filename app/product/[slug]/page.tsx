@@ -7,9 +7,38 @@ import {
 import { getListImagesFromFolder } from '@/app/utils/countFiles';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { Icon } from '@iconify/react';
+import { Metadata } from 'next';
+import Head from 'next/head';
 import Image from 'next/image';
 import DescriptionTabs from './components/DescriptionTabs';
 import ProductInformation from './components/ProductInformation';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const motor = motorListHome.find((item) => item.key === slug);
+
+  if (!motor) {
+    return {
+      title: 'Produk Tidak Ditemukan | Yamaha Surya Putra Motor Bandung',
+      description: 'Produk motor yang Anda cari tidak tersedia.',
+    };
+  }
+
+  return {
+    title: `Motor ${motor.name} | Promo Yamaha Surya Putra Motor Bandung`,
+    description: `Temukan ${motor.name} terbaru, promo menarik, dan layanan purna jual terbaik di Yamaha Surya Putra Motor Bandung.`,
+    openGraph: {
+      title: `Motor ${motor.name} | Promo Yamaha Surya Putra Motor Bandung`,
+      description: `Lihat detail ${motor.name} dan promo menarik lainnya di Yamaha Surya Putra Motor Bandung.`,
+      images: [`/images/motor-detail/${motor.key}/1.png`],
+    },
+    keywords: productCategories.map((item) => item.name).join(', '),
+  };
+}
 
 const ProductPage = async ({
   params,
@@ -30,6 +59,21 @@ const ProductPage = async ({
   if (motor && category) {
     return (
       <section className='px-5 py-10'>
+        <Head>
+          <title>{`Motor ${motor?.name} | Promo Yamaha Surya Putra Motor Bandung`}</title>
+          <meta
+            name='description'
+            content={`Temukan motor Yamaha impianmu di Yamaha Surya Putra Motor Bandung`}
+          />
+          <meta
+            property='og:title'
+            content={`Motor ${motor?.name} | Promo Yamaha Surya Putra Motor Bandung`}
+          />
+          <meta
+            property='og:description'
+            content={`Temukan motor Yamaha impianmu dengan promo terbaik dari kami`}
+          />
+        </Head>
         <div className='flex flex-col gap-5'>
           <div className='grid grid-cols-1 gap-3 lg:grid-cols-2'>
             <Dialog>

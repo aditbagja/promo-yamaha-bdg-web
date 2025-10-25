@@ -2,7 +2,6 @@ import {
   motorListHome,
   productCategories,
 } from '@/app/components/Produk/Produk.const';
-import Link from 'next/link';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -12,7 +11,38 @@ import {
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
 import { Icon } from '@iconify/react';
+import { Metadata } from 'next';
+import Head from 'next/head';
+import Link from 'next/link';
 import SortingResult from './components/SortingResult';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const category = productCategories.find((item) => item.key === slug);
+
+  if (!category) {
+    return {
+      title:
+        'Kategori Motor Tidak Ditemukan | Yamaha Surya Putra Motor Bandung',
+      description: 'Kategori motor yang Anda cari tidak tersedia.',
+    };
+  }
+
+  return {
+    title: `Kategori Motor ${category?.name} | Promo Yamaha Surya Putra Motor Bandung`,
+    description: `Temukan motor yamaha kategori ${category?.name} terbaru, promo menarik, dan layanan purna jual terbaik di Yamaha Surya Putra Motor Bandung.`,
+    openGraph: {
+      title: `Kategori Motor ${category?.name} | Promo Yamaha Surya Putra Motor Bandung`,
+      description: `Lihat detail motor kategori ${category?.name} dan promo menarik lainnya di Yamaha Surya Putra Motor Bandung.`,
+      images: [`${category?.image}`],
+    },
+    keywords: productCategories.map((item) => item.name).join(', '),
+  };
+}
 
 const ProductCategoryPage = async ({
   params,
@@ -27,6 +57,21 @@ const ProductCategoryPage = async ({
 
   return (
     <section className='px-5 py-16'>
+      <Head>
+        <title>{`Kategori Motor ${category?.name} | Promo Yamaha Surya Putra Motor Bandung`}</title>
+        <meta
+          name='description'
+          content={`Temukan motor Yamaha impianmu di Yamaha Surya Putra Motor Bandung`}
+        />
+        <meta
+          property='og:title'
+          content={`Kategori Motor ${category?.name} terbaru | Promo Yamaha Surya Putra Motor Bandung`}
+        />
+        <meta
+          property='og:description'
+          content={`Temukan motor Yamaha impianmu dengan promo terbaik dari kami`}
+        />
+      </Head>
       <div className='flex flex-col gap-10'>
         <div className='flex flex-col gap-3'>
           <Breadcrumb>

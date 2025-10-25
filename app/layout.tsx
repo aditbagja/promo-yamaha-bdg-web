@@ -76,7 +76,7 @@ export default function RootLayout({
           Bandung
         </title>
         <link rel='shortcut icon' href='/favicon.ico' />
-        <meta name='apple-mobile-web-app-title' content='79' />
+        <meta name='apple-mobile-web-app-title' content='Yamaha' />
         <meta name='msvalidate.01' content='C62998D8767043FD977B9D3909133D33' />
         <link rel='manifest' href='/site.webmanifest' />
       </Head>
