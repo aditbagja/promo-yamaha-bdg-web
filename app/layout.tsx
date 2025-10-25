@@ -27,6 +27,12 @@ export const metadata: Metadata = {
     'Yamaha Surya Putra Motor Bandung | Promo Yamaha Surya Putra Motor Bandung',
   description:
     'Dealer resmi Yamaha Bandung. Temukan motor Yamaha terbaru, promo menarik, dan layanan purna jual terbaik di Yamaha Surya Putra Motor Bandung.',
+  icons: {
+    icon: '/images/favicon.ico',
+    shortcut: '/images/favicon.ico',
+    apple: '/images/favicon.ico',
+  },
+  manifest: '/site.webmanifest',
   keywords: [
     'yamaha',
     'promo yamaha',
@@ -75,7 +81,7 @@ export default function RootLayout({
           Yamaha Surya Putra Motor Bandung | Promo Yamaha Surya Putra Motor
           Bandung
         </title>
-        <link rel='shortcut icon' href='/favicon.ico' />
+        <link rel='icon' href='/images/favicon.ico' />
         <meta name='apple-mobile-web-app-title' content='Yamaha' />
         <meta name='msvalidate.01' content='C62998D8767043FD977B9D3909133D33' />
         <link rel='manifest' href='/site.webmanifest' />
